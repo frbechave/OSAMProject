@@ -1,0 +1,9 @@
+October 5, 2015
+* changed “Login” to “Log In” in Log In Modal
+* added search button at the navbar
+* centered text in log in submit button
+* added log in with UP Mail
+* change the slick button color
+* fixed: slick button must not stop rotating
+* fixed: body not inline with the header
+* fixed: stop bulletin on hover and autoplay if not
