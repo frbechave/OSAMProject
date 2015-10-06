@@ -290,6 +290,12 @@ footer#main-footer {
     padding-bottom: 0.5rem;
     margin: 0; }
 
+.orbit-pic{
+    width:100%;
+    height:auto;
+    margin: auto;
+}
+
 
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 @media only screen and (max-width: 40em) { 
@@ -393,6 +399,13 @@ footer#main-footer {
   .center-children{
     text-align: center;
   }
+
+  /*
+  .orbit-pic{
+    width:100%;
+    height:auto;
+   }
+  */
 
 	/*FOR TESTING PURPOSES ONLY*/
 	.yellow{

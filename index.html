@@ -157,16 +157,14 @@
     <!--CONTENTS-->
     <div class="medium-12 columns">
       <!--ORBIT SAMPLE-->
-      <!--
-      <br>
-      <div class="slider single-item center-children">
-        <div style="width:80px;"><img src="img/orbit1.png"/></div>
-        <div style="width:80px;"><img src="img/orbit2.png"/></div>
-        <div style="width:80px;"><img src="img/orbit3.png"/></div>
-        <div style="width:80px;"><img src="img/orbit4.png"/></div>
-        <div style="width:80px;"><img src="img/orbit5.jpg"/></div>
+      <br class="show-for-small-only">
+      <div class="slider single-item center-children medium-12 columns">
+        <div><img class="orbit-pic" src="img/orbit1.png"/></div>
+        <div><img class="orbit-pic" src="img/orbit2.png"/></div>
+        <div><img class="orbit-pic" src="img/orbit3.png"/></div>
+        <div><img class="orbit-pic" src="img/orbit4.png"/></div>
+        <div><img class="orbit-pic" src="img/orbit5.jpg"/></div>
       </div>
-      -->
 
       <!--WHAT'S UP SECTION-->
       <div class="medium-7 columns">
@@ -441,7 +439,13 @@
             <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>   
             <script type="text/javascript">
                 $(document).ready(function(){
-                  $('.single-item').slick();
+                  $('.single-item').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    //autoplay: true,
+                    //autoplaySpeed: 2000
+                  });
                   $('.center-carousel').slick({
                     infinite: true,
                     slidesToShow: 1,

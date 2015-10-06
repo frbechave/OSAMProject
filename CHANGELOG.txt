@@ -7,3 +7,6 @@ October 5, 2015
 * fixed: slick button must not stop rotating
 * fixed: body not inline with the header
 * fixed: stop bulletin on hover and autoplay if not
+
+October 6, 2015
+* added header carousel (not yet done/final)
