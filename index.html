@@ -13,6 +13,8 @@
       <!--FOR OVERALL DESIGNS-->
       <link rel="stylesheet" href="css/foundation.css" />
       <link rel="stylesheet" href="css/app.css"/>
+      <!--POSSIBLE ICONS-->
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
       <!--FOR OVERALL JAVASCRIPT-->
       <script src="js/vendor/modernizr.js"></script> 
       <script src="js/countUp.js"></script> 
@@ -132,9 +134,21 @@
                             <a class="loginbtn button">Submit</a>
                             <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
                         </div>  
-                        <a href="#" class="button">Search</a>
-                      </div>   
+                      </div>  
                   </li>
+                  <!--DROP DOWN LOG IN SAMPLE-->
+                  <!--
+                  <div id="dropLogin">
+                    <div class="login-block">
+                        <h1>Log In</h1>
+                        <a><img src="img/upmail.png"/></a>
+                        <input type="text" value="" placeholder="Username" id="username" />
+                        <input type="password" value="" placeholder="Password" id="password" />
+                        <a class="loginbtn button">Submit</a><br>
+                        <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
+                    </div>  
+                  </div>
+                  -->
                 </ul>
                 <ul class="right">
                   <li>
@@ -330,7 +344,7 @@
         </script>
 
         <!--THIS IS FOR SOME IMPORANT STATS-->
-        <div id="statDiv" class="panel" style="background-color:#cccccc;">
+        <div id="statDiv" class="panel hide-for-small-only" style="background-color:#cccccc;">
           <div class="clearer-title">
             <div style="float:left;">Some Important Statistics</div><br>
           </div><br>
@@ -443,8 +457,8 @@
                     infinite: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    //autoplay: true,
-                    //autoplaySpeed: 2000
+                    autoplay: true,
+                    autoplaySpeed: 5000
                   });
                   $('.center-carousel').slick({
                     infinite: true,
@@ -453,13 +467,46 @@
                     autoplay: true,
                     autoplaySpeed: 2000
                   });
+                  $('.responsive').slick({
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 10,
+                    slidesToScroll: 1,
+                    responsive: [
+                      {
+                        breakpoint: 1024,
+                        settings: {
+                          slidesToShow: 8,
+                          slidesToScroll: 1,
+                          infinite: true,
+                          dots: true
+                        }
+                      },
+                      {
+                        breakpoint: 600,
+                        settings: {
+                          slidesToShow: 6,
+                          slidesToScroll: 1
+                        }
+                      },
+                      {
+                        breakpoint: 480,
+                        settings: {
+                          slidesToShow: 5,
+                          slidesToScroll: 1
+                        }
+                      }
+                    ]
+                  });
                 });
             </script>
           </section>
         </div>
 
         <!--PUT SOME IMPORTANT STATS HERE-->
-        <div class="panel">
+        <div class="panel  hide-for-small-only">
           <div class="clearer-title">
             <div style="float:left;">Student's Testimonials</div><br>
           </div>
@@ -497,9 +544,33 @@
             </ul>
           </div>
         </div>
-
-
       </div>
+
+      <!--ORGS SLIDER SAMPLE-->
+      <div class="slider responsive center-children medium-12 columns">
+        <div><img class="orgOrbitImg" src="img/orgs/up253.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/up254.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/up261.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/up270.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/up271.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upabs.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upace.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upaches.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upacs.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upads.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upaec.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upaems.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upagrisoc.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upaiem.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upaks.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upapex.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upardss.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upartave.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upass.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upasus.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upaus.jpg"/></div>
+      </div>
+
     </div>
     <!--END OF CONTENTS--> 
 
@@ -527,18 +598,15 @@
       <!--CONTACT OSA-->
       <div class="medium-5 columns">
         <div class="medium-12 columns">
-          <h6><strong style="color: #ffffff; text-align:center">For general inquiries, email <a>contact@uplbosa.org</a>.</strong><br>
+          <h4><strong style="color: #ffffff; text-align:center">For general inquiries</strong><br>
               <small>
-                Mailing Address<br class="show-for-small-only"><a disable> Room 2, 2/F, Student Union Building, UPLB, Laguna, 4031</a></br>
-                Director's Office (DO)<br class="show-for-small-only"><a disable> Room 2 | 536-2238 | do@uplbosa.org</a></br>
-                Communication and Information Technology (COMMIT)<br class="show-for-small-only"><a disable> Room 7 | 501-6761 | it@uplbosa.org</a></br>
-                Counseling and Testing Division (CTD)<br class="show-for-small-only"><a disable> Room 9 | 536-7255 | ctd@uplbosa.org</a></br>
-                International Students Section (ISS)<br class="show-for-small-only"><a disable> Room 12 | 536-7255 | iss@uplbosa.org</a></br>
-                Scholarships and Financial Assistance Division (SFAD)<br class="show-for-small-only"><a disable> Room 5 and 6 | 536-3209 | sfad@uplbosa.org</a></br>
-                Student Disciplinary Tribunal (SDT)<br class="show-for-small-only"><a disable> Room 14 | 536-7255 | sdt@uplbosa.org</a></br>
-                Student Organizations and Activities Division (SOAD)<br class="show-for-small-only"><a disable> Room 8 | 501-6761 | soad@uplbosa.org</a></br>
+                <strong>OFFICE OF STUDENT AFFAIRS</strong><br> 
+                <a disable><i class="fa fa-phone"></i> 536-2238</a></br>
+                <a disable><i class="fa fa-envelope-o"></i>  contact@uplbosa.org</a></br>
+                <a disable><i class="fa fa-map-marker"></i>  Room 2, 2/F, Student Union Building, UPLB, Laguna, 4031</a></br>
+                Or text <a style="color: #ffffff;" disable>help [space] inquires</a> and send to <a style="color: #ffffff;" disable>2929200</a>.<br>
               </small>
-          </h6><br>
+          </h4><br>
         </div>
       </div>
     </div>

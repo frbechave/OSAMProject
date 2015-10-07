@@ -10,3 +10,12 @@ October 5, 2015
 
 October 6, 2015
 * added header carousel (not yet done/final)
+
+October 7, 2015
+* altered the contact us portion of the footer (not awesome)
+* fixed: remove stats for small screens
+* fixed: remove student testimonials for small screens
+* changed the header font to Quicksand
+* changed navbar hover color
+* added org slider at the bottom
+* changed navar buttons color

@@ -1,4 +1,9 @@
 /*THIS IS THE NEW RESPONSIVE HEADER*/
+@font-face {
+  font-family: 'Quicksand';
+  src: url('Quicksand.otf');
+}
+
 .f-header{
     width: 100%;
     height: 120px;
@@ -173,10 +178,19 @@ ul#testimonials {
 	max-width: none;
 }
 
-#osa-footer{
-	background-color: #333333;
-  max-width: auto;
+.orgOrbitImg{
+    width: 75%;
 }
+
+.top-bar-section .left .has-dropdown:hover{
+    background-color: #474747;
+}
+
+#osa-footer{
+    background-color: #333333;
+    max-width: auto;
+}
+
 footer#main-footer {
     padding: 0;
     width: 100%;

@@ -2095,7 +2095,7 @@ meta.foundation-mq-topbar {
       padding: 0 0.9375rem; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
-        background: #222222; }
+        background: #151515; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       background: #008CBA;
       color: #FFFFFF;
@@ -2163,7 +2163,7 @@ meta.foundation-mq-topbar {
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         background-color: #555555;
         color: #FFFFFF;
-        background: #222222; }
+        background: #151515; }
       .top-bar-section .dropdown li label {
         background: #333333;
         white-space: nowrap; }
