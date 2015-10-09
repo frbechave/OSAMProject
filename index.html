@@ -129,11 +129,17 @@
                         <div class="login-block">
                             <h1>Log In</h1>
                             <a><img src="img/upmail.png"/></a>
-                            <input type="text" value="" placeholder="Username" id="username" />
-                            <input type="password" value="" placeholder="Password" id="password" />
+                            <input type="text" value="" placeholder="Username" id="username" autofocus required/>
+                            <input type="password" value="" placeholder="Password" id="password" required/>
                             <a class="loginbtn button">Submit</a>
                             <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
                         </div>  
+                        <script>
+                          $(document).on('opened.fndtn.reveal', '#myModal', function () {
+                            var modal = $(this);
+                            modal.find('#username').focus();
+                          });
+                        </script>
                       </div>  
                   </li>
                   <!--DROP DOWN LOG IN SAMPLE-->
@@ -150,7 +156,7 @@
                   </div>
                   -->
                 </ul>
-                <ul class="right">
+                <ul class="right hide-when-not-fit">
                   <li>
                     <input type="text">
                   </li>
@@ -184,7 +190,7 @@
       <div class="medium-7 columns">
         <br>
         <div class="clearer-title">
-          <div style="float:left;">What's Up?</div><br>
+          <div style="float:left;" class="super-small-screen" >What's Up?</div><br>
         </div>
         <br>
 
@@ -373,7 +379,7 @@
       <div class="medium-5 columns">
         <div class="panel">
           <div class="clearer-title">
-            <div style="float:left;">What's Happening?</div><br>
+            <div class="super-small-screen" style="float:left;">What's Happening?</div><br>
           </div>
 
           <section class="component"> 
@@ -389,7 +395,7 @@
         </div>
         <div class="panel osam-bulletin" style="width=50%;">
           <div class="clearer-title">
-            <div style="float:left;">OSAM Bulletin</div><br>
+            <div style="float:left;" class="super-small-screen" >OSAM Bulletin</div><br>
           </div>
           <br>
           <section class="component"> 
@@ -568,7 +574,7 @@
         <div><img class="orgOrbitImg" src="img/orgs/upartave.jpg"/></div>
         <div><img class="orgOrbitImg" src="img/orgs/upass.jpg"/></div>
         <div><img class="orgOrbitImg" src="img/orgs/upasus.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upaus.jpg"/></div>
+        <div><img class="orgOrbitImg" src="img/orgs/upau.jpg"/></div>
       </div>
 
     </div>

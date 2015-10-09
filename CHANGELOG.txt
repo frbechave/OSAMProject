@@ -19,3 +19,8 @@ October 7, 2015
 * changed navbar hover color
 * added org slider at the bottom
 * changed navar buttons color
+
+October 9, 2015
+* fixed: hide search on small screens
+* fixed: make the header texts adaptive to super small screens
+* fixed: check border bottom/text for smaller screens
