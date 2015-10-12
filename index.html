@@ -28,7 +28,7 @@
           <div class="inner-banner hide-for-small-only">
             <!--PUT LOGO AND LABEL HERE-->
             <div class="header-image">
-              <img src="img/osa-logo.png"/>
+              <a href="#"><img src="img/osa-logo.png"/></a>
             </div>
             <div class="header-text">
               <h5 id="header-minor">University of the Philippines Los Baños</h5>
@@ -38,7 +38,7 @@
           <div class="inner-banner show-for-small-only">
             <!--PUT LOGO AND LABEL HERE-->
             <div class="header-text">
-              <img style="width:50px;height:50px;margin-top:5px;" src="img/osa-logo.png"/><br><br>
+              <a href="#"><img style="width:50px;height:50px;margin-top:5px;" src="img/osa-logo.png"/></a><br><br>
               <h5 id="header-minor">University of the Philippines Los Baños</h5>
               <h2 id="header-major">Office of Student Affairs</h2>
             </div>
@@ -53,7 +53,7 @@
               <section class="top-bar-section">
                 <ul class="left">
                   <li>
-                    <a href= class="">Home</a>
+                    <a href="">Home</a>
                   </li>
                   <li class="divider"></li>
                   <li class="has-dropdown">
@@ -122,37 +122,66 @@
                       <li><a href="#">Mailing List</a></li>
                     </ul>
                   </li>
+                  <li class="divider show-for-small-only"></li>
+                  <li class="show-for-small-only"><a href="#">Search</a></li>
                   <li class="divider"></li>
                   <li class="has-form">
-                    <a href="#" data-reveal-id="myModal" class="button secondary">Log In</a>
-                      <div id="myModal" class="reveal-modal tiny" style="display: none" data-reveal>
-                        <div class="login-block">
-                            <h1>Log In</h1>
-                            <a><img src="img/upmail.png"/></a>
-                            <input type="text" value="" placeholder="Username" id="username" autofocus required/>
+                    <!--<a id="toggle" class="button secondary"> Log In </a>-->
+                    <!-- THIS IS THE LOGIN MODAL -->
+                    <a href="#" data-reveal-id="myModal" class="button secondary" OnClick="document.big-modal.big-modal-input.focus();">Log In</a>
+                      <div id="myModal" class="reveal-modal xlarge" style="display: none; margin:auto;" data-reveal>
+                        <div class="login-block show-for-small-only">
+                          <!--SHIFTING: For small screen-->
+                          <h1>Log In</h1>
+                          <form name="small-modal">
+                            <a><img style="width:auto;" src="img/upmail.png"/></a>
+                            <input type="text" value="" placeholder="Username" id="username" name="small-modal-input" autofocus required/>
                             <input type="password" value="" placeholder="Password" id="password" required/>
                             <a class="loginbtn button">Submit</a>
                             <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
-                        </div>  
-                        <script>
-                          $(document).on('opened.fndtn.reveal', '#myModal', function () {
-                            var modal = $(this);
-                            modal.find('#username').focus();
-                          });
-                        </script>
+                          </form>
+                        </div>
+                        <div class="login-block largeLogIn hide-for-small-only">
+                          <!--SHIFTING: For big screen-->
+                          <ul class="small-block-grid-2">
+                            <li>
+                              <h1>Log In</h1>
+                              <form name="big-modal">
+                              <a><img style="text-align:center;" src="img/upmail.png"/></a>
+                              <input type="text" value="" placeholder="Username" id="username" name="big-modal-input" autofocus required/>
+                              <input type="password" value="" placeholder="Password" id="password" required/>
+                              <a class="loginbtn button">Submit</a>
+                              <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
+                              </form>
+                            </li>
+                            <li>
+                              <h1>Reminders</h1>
+                              <ul class="disc">
+                                <li><strong>Keep your password to yourself.</strong> Sharing this to anyone is a violation of the <a>Acceptable Use Policy of the UP System</a>.  Violators shall suffer suspension ranging from one week to one year.</li>
+                                <li><strong>Account Problems:</strong> Proceed to the offices listed below and bring validated UPLB ID or any other valid ID plus Form 5.
+                                  <ul>
+                                    <li><strong>OSAM: </strong> Communication and Information Technology, Room 7, 2/F Student Union Building.</li>
+                                    <li><strong>e-UP/UP Mail: </strong>Information Technology Center, 2/F AG Samonte Hall.</li>
+                                  </ul>
+                                </li>
+                               </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>  
                   </li>
-                  <!--DROP DOWN LOG IN SAMPLE-->
                   <!--
-                  <div id="dropLogin">
-                    <div class="login-block">
-                        <h1>Log In</h1>
-                        <a><img src="img/upmail.png"/></a>
-                        <input type="text" value="" placeholder="Username" id="username" />
-                        <input type="password" value="" placeholder="Password" id="password" />
-                        <a class="loginbtn button">Submit</a><br>
-                        <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
-                    </div>  
+                  <div class="target">
+                    <div id="dropLogin">
+                      <div class="login-block">
+                          <h1>Log In</h1>
+                          <a><img src="img/upmail.png"/></a>
+                          <input type="text" value="" placeholder="Username" id="username" />
+                          <input type="password" value="" placeholder="Password" id="password" />
+                          <a style="vertical-align:middle;" class="loginbtn button">Submit</a><br><br>
+                          <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
+                      </div>  
+                    </div>
                   </div>
                   -->
                 </ul>
@@ -425,7 +454,7 @@
                   <li>
                     <a>Winter Seminar on Human Security Development and Energy Science</a>
                     <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
-                    <p class="smaller hide-for-small-only">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
+                    <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
                   </li>
                 </ul>
               </div>
@@ -437,7 +466,7 @@
                   <li>
                     <a>Title Two</a>
                     <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
-                    <p class="smaller hide-for-small-only">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
+                    <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
                   </li>
                 </ul>
               </div>
@@ -449,7 +478,7 @@
                   <li>
                     <a>Title Three</a>
                     <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
-                    <p class="smaller hide-for-small-only">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
+                    <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
                   </li>
                 </ul>
               </div>
@@ -459,6 +488,9 @@
             <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>   
             <script type="text/javascript">
                 $(document).ready(function(){
+                  $("#toggle").click(function(){
+                     $(".target").slideToggle( 'slow', function(){});
+                  });
                   $('.single-item').slick({
                     infinite: true,
                     slidesToShow: 1,
@@ -514,7 +546,7 @@
         <!--PUT SOME IMPORTANT STATS HERE-->
         <div class="panel  hide-for-small-only">
           <div class="clearer-title">
-            <div style="float:left;">Student's Testimonials</div><br>
+            <div style="float:left;" class="superx2-small-screen">Student's Testimonials</div><br>
           </div>
           <!--This div is for the existing student testimonials-->
           <div style="overflow-y: scroll;overflow-x: hidden;height:380px;">
@@ -552,31 +584,6 @@
         </div>
       </div>
 
-      <!--ORGS SLIDER SAMPLE-->
-      <div class="slider responsive center-children medium-12 columns">
-        <div><img class="orgOrbitImg" src="img/orgs/up253.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/up254.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/up261.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/up270.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/up271.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upabs.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upace.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upaches.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upacs.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upads.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upaec.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upaems.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upagrisoc.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upaiem.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upaks.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upapex.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upardss.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upartave.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upass.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upasus.jpg"/></div>
-        <div><img class="orgOrbitImg" src="img/orgs/upau.jpg"/></div>
-      </div>
-
     </div>
     <!--END OF CONTENTS--> 
 
@@ -604,15 +611,22 @@
       <!--CONTACT OSA-->
       <div class="medium-5 columns">
         <div class="medium-12 columns">
-          <h4><strong style="color: #ffffff; text-align:center">For general inquiries</strong><br>
+          <h4>
               <small>
                 <strong>OFFICE OF STUDENT AFFAIRS</strong><br> 
-                <a disable><i class="fa fa-phone"></i> 536-2238</a></br>
+                <a disable style="margin-bottom:-50px;"><i class="fa fa-phone"></i> 536-2238</a></br>
                 <a disable><i class="fa fa-envelope-o"></i>  contact@uplbosa.org</a></br>
                 <a disable><i class="fa fa-map-marker"></i>  Room 2, 2/F, Student Union Building, UPLB, Laguna, 4031</a></br>
                 Or text <a style="color: #ffffff;" disable>help [space] inquires</a> and send to <a style="color: #ffffff;" disable>2929200</a>.<br>
-              </small>
-          </h4><br>
+              </small><br>
+              <ul class="inline-list">
+                <li style="margin-left:0; margin-right: 10px; color: #ffffff;" disable>Connect with us!</li> 
+                <li style="margin: auto;"><a href="#"><img src="img/facebook.png" style="width:30px;"/></a></li>
+                <li style="margin: auto;"><a href="#"><img src="img/twitter.png" style="width:30px;"/></a></li>
+                <li style="margin: auto;"><a href="#"><img src="img/youtube.png" style="width:30px;"/></a></li>
+                <li style="margin: auto;"><a href="#"><img src="img/gplus.png" style="width:30px;"/></a></li>
+              </ul>
+          </h4>
         </div>
       </div>
     </div>

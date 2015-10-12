@@ -24,3 +24,8 @@ October 9, 2015
 * fixed: hide search on small screens
 * fixed: make the header texts adaptive to super small screens
 * fixed: check border bottom/text for smaller screens
+
+October 12, 2015
+* added reminder in modal for large pages
+* tried drop down login (failed, naka-comment)
+* fixed: make sure that the header image is clickable
