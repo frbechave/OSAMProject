@@ -29,3 +29,5 @@ October 12, 2015
 * added reminder in modal for large pages
 * tried drop down login (failed, naka-comment)
 * fixed: make sure that the header image is clickable
+* redesigned footer
+* fixed: automatic type on username field after opening the modal

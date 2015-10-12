@@ -128,7 +128,7 @@
                   <li class="has-form">
                     <!--<a id="toggle" class="button secondary"> Log In </a>-->
                     <!-- THIS IS THE LOGIN MODAL -->
-                    <a href="#" data-reveal-id="myModal" class="button secondary" OnClick="document.big-modal.big-modal-input.focus();">Log In</a>
+                    <a href="#" data-reveal-id="myModal" id="toggle" class="button secondary">Log In</a>
                       <div id="myModal" class="reveal-modal xlarge" style="display: none; margin:auto;" data-reveal>
                         <div class="login-block show-for-small-only">
                           <!--SHIFTING: For small screen-->
@@ -148,7 +148,7 @@
                               <h1>Log In</h1>
                               <form name="big-modal">
                               <a><img style="text-align:center;" src="img/upmail.png"/></a>
-                              <input type="text" value="" placeholder="Username" id="username" name="big-modal-input" autofocus required/>
+                              <input type="text" value="" placeholder="Username" id="thisusername" name="big-modal-input" autofocus="autofocus" required/>
                               <input type="password" value="" placeholder="Password" id="password" required/>
                               <a class="loginbtn button">Submit</a>
                               <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
@@ -489,7 +489,12 @@
             <script type="text/javascript">
                 $(document).ready(function(){
                   $("#toggle").click(function(){
-                     $(".target").slideToggle( 'slow', function(){});
+                    setTimeout(function(){
+                      $('#thisusername').focus();
+                    },500);
+                    setTimeout(function(){
+                      $('#username').focus();
+                    },500);
                   });
                   $('.single-item').slick({
                     infinite: true,
