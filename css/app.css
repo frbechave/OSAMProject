@@ -1,325 +1,371 @@
-/*THIS IS THE NEW RESPONSIVE HEADER*/
+/* STYLES ON NORMAL COMPUTER SCREENS */
 @font-face {
   font-family: 'Quicksand';
   src: url('Quicksand.otf');
 }
 
-#dropLogin{
-    margin-left: 80%;
-    margin-top: 9%;
-}
+    /* HEADER */
+    .f-header{
+        width: 100%;
+        height: 120px;
+        background: #500000;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        z-index: 50;
+        .opacity: 0;
+        display: block;
+    }
+    .inner-banner{
+        width: 95%;
+        height: 100px;
+        background: #830000;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        position: relative;
+        .opacity: 0;
+        display: block;
+    }
+    .header-image {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: relative;
+        float: left;
+        margin: 10px 0 0 30px
+    }
+    .header-image img {
+        width: 100%
+    }
+    #header-minor,
+    #header-major {
+        position: absolute;
+        color: #fff;
+        display: block;
+        font-family: 'Quicksand';
+    }
+    #header-minor {
+        width: 550px;
+        margin-top: 30px;
+        margin-left: 120px;
+    }
+    #header-major {
+        width: 700px;
+        margin-top: 40px;
+        margin-left: 120px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
+    }
+    .below-header{
+        z-index: 100;
+        width: 95%;
+        max-width: 1500px;
+        height: auto;
+        position:relative;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.7)
+    }
+    .top-bar-section .left .has-dropdown:hover{
+        background-color: #474747;
+    }
 
-.f-header{
-    width: 100%;
-    height: 120px;
-    background: #500000;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: 50;
-    .opacity: 0;
-    display: block;
-}
+        /* MODAL */
+        #myModal{
+            background: rgba(254, 254, 254, 0);
+            border: rgba(254, 254, 254, 0);
+            box-shadow: 0px 0px 0px #ffffff;
+        }
+        #myModal-alt{
+            background: rgba(254, 254, 254, 0);
+            border: rgba(254, 254, 254, 0);
+            box-shadow: 0px 0px 0px #ffffff;
+        }
 
-.inner-banner{
-    width: 95%;
-    height: 100px;
-    background: #830000;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    position: relative;
-    .opacity: 0;
-    display: block;
-}
+            /* LOG IN BOX IN MODAL / DROP DOWN */
+            #dropLogin{
+                margin-left: 80%;
+                margin-top: 9%;
+            }
+            .login-block{
+                width: 250px;
+                padding: 20px;
+                background: #fff;
+                border-radius: 5px;
+                border-top: 5px solid #333333;
+                border-bottom: 5px solid #333333;
+                margin: 0 auto;
+            } 
+            .largeLogIn{
+                width: 80%;
+            }
+            .login-block h1 {
+                text-align: center;
+                color: #000;
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            .login-block h5 {
+                text-align: center;
+                color: #000;
+                font-size: 12px;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            .login-block input {
+                width: 100%;
+                height: 42px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+                font-size: 14px;
+                font-family: Montserrat;
+                padding: 0 20px 0 50px;
+                outline: none;
+            }
+            .login-block input#thisusername {
+                background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+                background-size: 16px 80px;
+            }
+            .login-block input#thisusername:focus {
+                background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+                background-size: 16px 80px;
+            }
+            .login-block input#username {
+                background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+                background-size: 16px 80px;
+            }
+            .login-block input#username:focus {
+                background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+                background-size: 16px 80px;
+            }
+            .login-block input#password {
+                background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+                background-size: 16px 80px;
+            }
+            .login-block input#password:focus {
+                background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+                background-size: 16px 80px;
+            }
+            .login-block input:active, .login-block input:focus {
+                border: 1px solid #830000;
+            }
+            .login-block .loginbtn {
+                width: 100%;
+                height: 40px;
+                line-height:10px;
+                background: #830000;
+                border-radius: 5px;
+                border: 1px solid #fff;
+                color: #fff;
+                font-weight: bold;
+                text-transform: uppercase;
+                vertical-align: middle;
+                font-size: 14px;
+                font-family: Montserrat;
+                outline: none;
+                cursor: pointer;
+            }
+            .login-block .loginbtn:hover {
+                background: #830002;
+            }
 
-.below-header{
-    z-index: 100;
-    width: 95%;
-    max-width: 1500px;
-    height: auto;
-    position:relative;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.7)
-}
 
-.header-image {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    position: relative;
-    float: left;
-    margin: 10px 0 0 30px
-}
-.header-image img {
-    width: 100%
-}
 
-#header-minor,
-#header-major {
-    position: absolute;
-    color: #fff;
-    display: block;
-    font-family: 'Quicksand';
-}
-#header-minor {
-    width: 550px;
-    margin-top: 30px;
-    margin-left: 120px;
-}
-#header-major {
-    width: 700px;
-    margin-top: 40px;
-    margin-left: 120px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
-}
+    /* BODY */
+    .center-children{
+        text-align: center;
+    }
+    .orbit-pic{
+        width:100%;
+        height:auto;
+        margin: auto;
+    }
+        
+        /* FOR NEWS ARTICLES */
+        ul#stories {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0
+        }
+        #stories li {
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 0;
+            padding-left: 0;
+            border-bottom: 1px solid #ccc;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 20px
+        }
+        #stories li .image {
+            float: left;
+            width: 30%
+        }
+        #stories li .titlebody {
+            float: left;
+            width: 70%;
+            padding-left: 20px
+        }
+        #stories li .titlebody h3 {
+            font-size: 1.2em;
+            margin-top: 0;
+            padding-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 0
+        }
+        .sidekick {
+            font-size: .8em;
+            color: #888
+        }
+        .please-justify {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .clearer {
+            clear: both;
+            height: 1px
+        }
 
-.sidekick {
-    font-size: .8em;
-    color: #888
-}
+        .clearer-title {
+            font-size: 1.5em;
+            line-height: 2em;
+            width: 100%;
+            height: 2em;
+            padding-left: 10px;
+            border-bottom: 2px solid #930000
+        }
+        /*THIS IS FOR SEE MORE*/
+        .morenews{
+            opacity: 0.5;
+        }
+        .morenews:hover{
+            opacity: 1;
+        }
 
-.clearer {
-    clear: both;
-    height: 1px
-}
+        /* FOR OSAM-BULLETIN */
+        .osam-bulletin{
+            max-height: 580px;
+        }
+        .center-carousel-div{
+            margin: 5px;
+        }
+        /* FOR STUDENT'S TESTIMONIALS */
+        ul#testimonials {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0
+        }
+        #testimonials li {
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 0;
+            padding-left: 0;
+            border-bottom: 1px solid #ccc;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 20px
+        }
+        #testimonials li .image {
+            float: left;
+            width: 50px;
+            height: 50px;
+        }
+        #testimonials li .titlebody {
+            float: left;
+            width: 80%;
+            padding-left: 20px
+        }
+        #testimonials li .titlebody h3 {
+            font-size: 1.2em;
+            margin-top: 0;
+            padding-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 0
+        }
+        .event {
+          padding: 1rem 1rem 1rem 0;
+          display: table; 
+        }
+        .event-date {
+          width: 6rem;
+          margin: 0 auto 1rem;
+          display: table-cell;
+          width: auto; 
+        }
+        .event-date .event-month {
+            margin: 0;
+            background: #eee;
+            padding: 0.5rem 2rem;
+            text-align: center; 
+        }
+        .event-date .event-day {
+            margin: 0;
+            border: 1px solid #eee;
+            padding: 0 2rem;
+            text-align: center;
+            font-size: 2rem; 
+        }
+        .event-desc {
+          padding: 0 0 0 1rem;
+          text-align: left;
+          display: table-cell;
+          vertical-align: top; 
+        }
+        .event-desc .event-desc-header {
+            margin: 0 0 0.5rem 0;
+            padding: 0; 
+        }
+        .event-desc .event-desc-detail {
+            margin: 0 0 0.25rem;
+            padding: 0; 
+        }
+        .event-desc .event-desc-time {
+            font-weight: bold; 
+        }
+        .event-desc .rsvp.button {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin: 0; 
+        }
 
-.clearer-title {
-    font-size: 1.5em;
-    line-height: 2em;
-    width: 100%;
-    height: 2em;
-    padding-left: 10px;
-    border-bottom: 2px solid #930000
-}
 
-ul#stories {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0
-}
-#stories li {
-    display: block;
-    margin-bottom: 20px;
-    margin-left: 0;
-    padding-left: 0;
-    border-bottom: 1px solid #ccc;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px
-}
-#stories li .image {
-    float: left;
-    width: 30%
-}
-#stories li .titlebody {
-    float: left;
-    width: 70%;
-    padding-left: 20px
-}
-#stories li .titlebody h3 {
-    font-size: 1.2em;
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0
-}
+    /* FOOTER */
+    #osa-footer{
+        background-color: #333333;
+        max-width: auto;
+    }
+    footer#main-footer {
+        padding: 0;
+        width: 100%;
+        height: 50px;
+        background: #500000;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5);
+        margin: 0 auto
+    }
+    #main-footer .footer-component {
+        position: absolute;
+        background: #830000;
+        width: 95%;
+        max-width: 1500px;
+        min-width: 350px;
+        height: 50px;
+        margin: 0 auto;
+        box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3), -5px 0 20px rgba(0, 0, 0, 0.3)
+    }
+    .footer-title-text{
+        font-size: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        color: #fff; !important
+    }
 
-ul#testimonials {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0
-}
-#testimonials li {
-    display: block;
-    margin-bottom: 20px;
-    margin-left: 0;
-    padding-left: 0;
-    border-bottom: 1px solid #ccc;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px
-}
-#testimonials li .image {
-    float: left;
-    width: 50px;
-    height: 50px;
-}
-#testimonials li .titlebody {
-    float: left;
-    width: 80%;
-    padding-left: 20px
-}
-#testimonials li .titlebody h3 {
-    font-size: 1.2em;
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0
-}
 
-.circle-btn{
-	height:110px; 
-	width:110px; 
-	background-color: #830000; 
-	border-radius:50%;
-}
 
-.circle-btn:hover{
-	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-	opacity: 80%;
-	background-color: #830000; 
-	box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.7);
-}
-
-.footer-title-text{
-	font-size: 20px;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-	color: #fff; !important
-}
-
-.row{
-	width: 95%;
-	max-width: none;
-}
-
-.orgOrbitImg{
-    width: 75%;
-}
-
-.top-bar-section .left .has-dropdown:hover{
-    background-color: #474747;
-}
-
-#osa-footer{
-    background-color: #333333;
-    max-width: auto;
-}
-
-footer#main-footer {
-    padding: 0;
-    width: 100%;
-    height: 50px;
-    background: #500000;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5);
-    margin: 0 auto
-}
-#main-footer .footer-component {
-    position: absolute;
-    background: #830000;
-    width: 95%;
-    max-width: 1500px;
-    min-width: 350px;
-    height: 50px;
-    margin: 0 auto;
-    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3), -5px 0 20px rgba(0, 0, 0, 0.3)
-}
-
-.center-carousel-div{
-	margin: 5px;
-}
-
-.one-edge-shadow {
-	-webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-}
-
-.student-menu-caption{
-    color: #fff;
-    display: block;
-    color: black;
-    font-size: 0.7em;
-}
-
-.footer-img{
-	text-align: center;
-}
-
-.button-group {
-  position: relative;
-  display: inline-block;
-  float: center;
-  margin: 1rem 0; 
-}
-.button-group:before {
-    content: attr(data-grouptype);
-    z-index: 99999;
-    color: #999;
-    display: block;
-    font-size: 1rem;
-    padding: 0.25em;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    left: 42.5%;
-    top: 0.35rem; 
-}
-.button-group button + button {
-    margin-left: 5px; 
-}
-
-/*THIS IS A CHEAT TO MAKE TRANSPARENT BACKGROUND*/
-#myModal{
-    background: rgba(254, 254, 254, 0);
-    border: rgba(254, 254, 254, 0);
-    box-shadow: 0px 0px 0px #ffffff;
-}
-
-#myModal-alt{
-    background: rgba(254, 254, 254, 0);
-    border: rgba(254, 254, 254, 0);
-    box-shadow: 0px 0px 0px #ffffff;
-}
-
-/*THIS IS FOR STUDENT TESTIMONIALS*/
-.event {
-  padding: 1rem 1rem 1rem 0;
-  display: table; }
-
-.event-date {
-  width: 6rem;
-  margin: 0 auto 1rem;
-  display: table-cell;
-  width: auto; }
-  .event-date .event-month {
-    margin: 0;
-    background: #eee;
-    padding: 0.5rem 2rem;
-    text-align: center; }
-  .event-date .event-day {
-    margin: 0;
-    border: 1px solid #eee;
-    padding: 0 2rem;
-    text-align: center;
-    font-size: 2rem; }
-
-.event-desc {
-  padding: 0 0 0 1rem;
-  text-align: left;
-  display: table-cell;
-  vertical-align: top; }
-  .event-desc .event-desc-header {
-    margin: 0 0 0.5rem 0;
-    padding: 0; }
-  .event-desc .event-desc-detail {
-    margin: 0 0 0.25rem;
-    padding: 0; }
-  .event-desc .event-desc-time {
-    font-weight: bold; }
-  .event-desc .rsvp.button {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin: 0; }
-
-.orbit-pic{
-    width:100%;
-    height:auto;
-    margin: auto;
-}
-
+/* STYLES ON SMALLER SCREENS (MOBILE/TABLETS) */
 /*change the font to smaller font for super small screens*/
 @media only screen and (max-width: 28.125em) { 
     h2#header-major{
@@ -403,74 +449,55 @@ footer#main-footer {
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
     }
 
-	.hide-on-mobile{
+    .hide-on-mobile{
         display: none;
-	}
-	.img-header-mobile{
-		width: 60px;
-		height: 60px;
-		margin-top: 10px;
-		position: relative;
-	}
+    }
+    .img-header-mobile{
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        position: relative;
+    }
 
-  .osam-bulletin{
-    max-height: 380px;
-  }
 
-	/* I GOT THE IDS FROM OSAM.CSS AND SOME CHANGES ARE MADE FOR VISUAL PURPOSES */
-	#header-minor {
-	    width: 100%;
-	    top: 0px; /*FROM 18px to 10px*/
-	}
-	#header-major {
-	    width: 100%;
-	    top: 0px;	/*FROM 20px to 10px*/
-	    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
-	}
-	#stories li .titlebody {
-		text-align: center;
-	    width: 100%;
-	}
-	.circle-btn{
-		height:110px; 
-		width:110px; 
-		background-color: #830000; 
-		border-radius:50%;
-		margin: 5px;
-	}
-	.circle-btn:hover{
-		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-		opacity: 80%;
-		background-color: #830000; 
-		box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.7);
-	}
-	.student-menu-caption{
-		position: relative;
-	    color: #fff;
-	    width:110px; 
-	    display: block;
-	    color: black;
-	    font-size: 0.7em;
-	}
-
-  .center-children{
-    text-align: center;
-  }
-
-  /*
-  .orbit-pic{
-    width:100%;
-    height:auto;
-   }
-  */
-
-	/*FOR TESTING PURPOSES ONLY*/
-	.yellow{
-		background-color: yellow;
-	}
-	.blue{
-		background-color: blue;
-	}
+    /* I GOT THE IDS FROM OSAM.CSS AND SOME CHANGES ARE MADE FOR VISUAL PURPOSES */
+    #header-minor {
+        width: 100%;
+        top: 0px; /*FROM 18px to 10px*/
+    }
+    #header-major {
+        width: 100%;
+        top: 0px;   /*FROM 20px to 10px*/
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7)
+    }
+    #stories li .titlebody {
+        text-align: center;
+        width: 100%;
+    }
+    .circle-btn{
+        height:110px; 
+        width:110px; 
+        background-color: #830000; 
+        border-radius:50%;
+        margin: 5px;
+    }
+    .circle-btn:hover{
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+        opacity: 80%;
+        background-color: #830000; 
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.7);
+    }
+    .student-menu-caption{
+        position: relative;
+        color: #fff;
+        width:110px; 
+        display: block;
+        color: black;
+        font-size: 0.7em;
+    }
+    .osam-bulletin{
+        max-height: 380px;
+    }
 } 
 
 /*FOR GOOGLE CALENDARS*/
@@ -489,114 +516,3 @@ footer#main-footer {
 @media only screen and (min-width: 90.063em) {
   iframe.googlemaps { height:360px; }
 } 
-
-
-/*-------LOGIN STARTS HERE -------*/
-
-.login-block{
-    width: 250px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    border-top: 5px solid #333333;
-    border-bottom: 5px solid #333333;
-    margin: 0 auto;
-} 
-
-.largeLogIn{
-    width: 80%;
-}
-
-.login-block h1 {
-    text-align: center;
-    color: #000;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.login-block h5 {
-    text-align: center;
-    color: #000;
-    font-size: 12px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-
-.login-block input {
-    width: 100%;
-    height: 42px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-family: Montserrat;
-    padding: 0 20px 0 50px;
-    outline: none;
-}
-
-.login-block input#thisusername {
-    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
-    background-size: 16px 80px;
-}
-
-.login-block input#thisusername:focus {
-    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
-    background-size: 16px 80px;
-}
-
-.login-block input#username {
-    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
-    background-size: 16px 80px;
-}
-
-.login-block input#username:focus {
-    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
-    background-size: 16px 80px;
-}
-
-.login-block input#password {
-    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
-    background-size: 16px 80px;
-}
-
-.login-block input#password:focus {
-    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
-    background-size: 16px 80px;
-}
-
-.login-block input:active, .login-block input:focus {
-    border: 1px solid #830000;
-}
-
-.login-block .loginbtn {
-    width: 100%;
-    height: 40px;
-    line-height:10px;
-    background: #830000;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    vertical-align: middle;
-    font-size: 14px;
-    font-family: Montserrat;
-    outline: none;
-    cursor: pointer;
-}
-
-.login-block .loginbtn:hover {
-    background: #830002;
-}
-
-/*THIS IS FOR SEE MORE*/
-.morenews{
-    opacity: 0.5;
-}
-.morenews:hover{
-    opacity: 1;
-}

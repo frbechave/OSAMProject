@@ -31,3 +31,11 @@ October 12, 2015
 * fixed: make sure that the header image is clickable
 * redesigned footer
 * fixed: automatic type on username field after opening the modal
+
+October 13, 2015
+* changed the localtion of the slick prev and next buttons
+* justified some of the texts in the body
+
+October 14, 2015
+* fixed: countup in stats will start on "onscreen"
+* documented app.css

@@ -16,9 +16,9 @@
       <!--POSSIBLE ICONS-->
       <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
       <!--FOR OVERALL JAVASCRIPT-->
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="js/vendor/modernizr.js"></script> 
       <script src="js/countUp.js"></script> 
-
   </head>
 
   <body>
@@ -234,7 +234,7 @@
                 <a href="#">OSA holds first recognition day for graduating UPLB Gabay Volunteers</a>
               </h5>
               <div class="sidekick">10 July 2015</div>
-              <p> The Counseling and Testing Division (CTD) under the Office of Student Affairs (OSA) recognized 13 graduating members of the UPLB Gabay Volunteer Corps on 4 July 2015 at the Makiling Hall, Student Union ... 
+              <p class="please-justify"> The Counseling and Testing Division (CTD) under the Office of Student Affairs (OSA) recognized 13 graduating members of the UPLB Gabay Volunteer Corps on 4 July 2015 at the Makiling Hall, Student Union ... 
                 <a href="#">[continue reading]</a>
               </p>
             </div>
@@ -249,7 +249,7 @@
                 <a href="#">OSA looks back as it celebrates its 55th anniversary</a>
               </h5>
               <div class="sidekick">7 July 2015</div>
-                <p>Looking back and beyond. Old and new faces from Office of Student Affairs (OSA) gathered at the Makiling Hall, Student Union Building on 24 June 2015 to culminate its month-long anniversary celebration. There ... 
+                <p class="please-justify">Looking back and beyond. Old and new faces from Office of Student Affairs (OSA) gathered at the Makiling Hall, Student Union Building on 24 June 2015 to culminate its month-long anniversary celebration. There ... 
                   <a href="#">[continue reading]</a>
                 </p>
             </div>
@@ -265,7 +265,7 @@
                 </a>
               </h5>
               <div class="sidekick">6 July 2015</div>
-              <p> On 2 July 2015, Makiling Hall became a witness to the induction of UPLB’s nine new Ambassadors of Goodwill. Wearing their national attires, the graduates pledged to continue the practice of honor and excellence ... 
+              <p class="please-justify"> On 2 July 2015, Makiling Hall became a witness to the induction of UPLB’s nine new Ambassadors of Goodwill. Wearing their national attires, the graduates pledged to continue the practice of honor and excellence ... 
                 <a href="#">[continue reading]</a>
               </p>
             </div>
@@ -280,7 +280,7 @@
                 <a href="#">OSA scholar graduates as top of the class</a>
               </h5>
               <div class="sidekick">2 July 2015</div>
-              <p> He gets up, takes a shower, walks to a lecture room then suddenly realizes that he is not yet ready for the quiz that day. So 10 minutes before the class, he crams all his notes in the hope of getting at least a ... 
+              <p class="please-justify"> He gets up, takes a shower, walks to a lecture room then suddenly realizes that he is not yet ready for the quiz that day. So 10 minutes before the class, he crams all his notes in the hope of getting at least a ... 
                 <a href="#">[continue reading]</a>
               </p>
             </div>
@@ -295,7 +295,7 @@
                 <a href="#">OSA celebrates its 55 years of existence, looking back and beyond</a>
               </h5>
               <div class="sidekick">26 June 2015</div>
-              <p> The Office of the Students Affairs (OSA) paraded to their 55th Anniversary with the theme Looking Back and Beyond on 23 June 2015. In the last week of its month-long celebration, OSA victoriously celebrated its ... 
+              <p class="please-justify"> The Office of the Students Affairs (OSA) paraded to their 55th Anniversary with the theme Looking Back and Beyond on 23 June 2015. In the last week of its month-long celebration, OSA victoriously celebrated its ... 
                 <a href="#">[continue reading]</a>
               </p>
             </div>
@@ -352,31 +352,6 @@
             </div>
           </li>
         </ul>
-
-        <script>
-          var useOnComplete = false,
-              useEasing = true,
-              useGrouping = true,
-              options = {
-                  useEasing : useEasing, // toggle easing
-                  useGrouping : useGrouping, // 1,000,000 vs 1000000
-                  separator : ',', // character to use as a separator
-              }
-
-          var demo, code, data, stars;
-
-          window.onload = function() {
-                // setup CountUp object
-                stat1 = new CountUp('stats1', 0, 98, 0, 2.5, options);
-                stat2 = new CountUp('stats2', 0, 56, 0, 2.5, options);
-                stat3 = new CountUp('stats3', 0, 12, 0, 2.5, options);
-                stat4 = new CountUp('stats4', 0, 72, 0, 2.5, options);
-                stat1.start();
-                stat2.start();
-                stat3.start();
-                stat4.start();
-          }
-        </script>
 
         <!--THIS IS FOR SOME IMPORANT STATS-->
         <div id="statDiv" class="panel hide-for-small-only" style="background-color:#cccccc;">
@@ -483,68 +458,6 @@
                 </ul>
               </div>
             </div>
-
-            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>   
-            <script type="text/javascript">
-                $(document).ready(function(){
-                  $("#toggle").click(function(){
-                    setTimeout(function(){
-                      $('#thisusername').focus();
-                    },500);
-                    setTimeout(function(){
-                      $('#username').focus();
-                    },500);
-                  });
-                  $('.single-item').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 5000
-                  });
-                  $('.center-carousel').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 2000
-                  });
-                  $('.responsive').slick({
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    infinite: true,
-                    speed: 300,
-                    slidesToShow: 10,
-                    slidesToScroll: 1,
-                    responsive: [
-                      {
-                        breakpoint: 1024,
-                        settings: {
-                          slidesToShow: 8,
-                          slidesToScroll: 1,
-                          infinite: true,
-                          dots: true
-                        }
-                      },
-                      {
-                        breakpoint: 600,
-                        settings: {
-                          slidesToShow: 6,
-                          slidesToScroll: 1
-                        }
-                      },
-                      {
-                        breakpoint: 480,
-                        settings: {
-                          slidesToShow: 5,
-                          slidesToScroll: 1
-                        }
-                      }
-                    ]
-                  });
-                });
-            </script>
           </section>
         </div>
 
@@ -601,7 +514,7 @@
         <h4><strong style="color: #ffffff;">OSAM System</strong><br>
           <small>
             The Office of Student Affairs Management (OSAM) System is a modernization project that keeps OSA up to date with industry standards. OSA is taking advantage of the benefits of Information Technology to promote students' academic growth and personal development. 
-            <a href="page-osam">[read more]</a> 
+            <a href="">[read more]</a> 
           </small>
         </h4><br>
       </div>
@@ -636,6 +549,124 @@
       </div>
     </div>
     <!--END OF FOOTER-->
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>   
+    <script src="js/jquery.onscreen.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+          /* THESE ARE THE ANIMATIONS FOR THE COUNTUP */
+          var useOnComplete = false,
+            useEasing = true,
+            useGrouping = true,
+            options = {
+                useEasing : useEasing, // toggle easing
+                useGrouping : useGrouping, // 1,000,000 vs 1000000
+                separator : ',', // character to use as a separator
+            }
+
+          $("#toggle").click(function(){
+            setTimeout(function(){
+              $('#thisusername').focus();
+            },500);
+            setTimeout(function(){
+              $('#username').focus();
+            },500);
+          });
+          $('.single-item').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000
+          });
+          $('.center-carousel').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+          });
+          $('.responsive').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 10,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 8,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 6,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 5,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+          
+          /* THIS IS FOR COUNT UP */
+          var element = $('#statDiv');
+          var element2 = $('.osam-bulletin');
+          var runCount = 0;
+
+          function myFunction() {
+              stat1 = new CountUp('stats1', 0, 98, 0, 2.5, options);
+              stat2 = new CountUp('stats2', 0, 56, 0, 2.5, options);
+              stat3 = new CountUp('stats3', 0, 12, 0, 2.5, options);
+              stat4 = new CountUp('stats4', 0, 72, 0, 2.5, options);
+              stat1.start();
+              stat2.start();
+              stat3.start();
+              stat4.start();
+              runCount = 1;
+          }
+
+          function myFunctionReset() {
+              runCount = 0;
+              document.getElementById("stats1").innerHTML = "0";
+              document.getElementById("stats2").innerHTML = "0";
+              document.getElementById("stats3").innerHTML = "0";
+              document.getElementById("stats4").innerHTML = "0";
+          }
+
+          $(window).scroll(function(){
+              var docViewTop = $(window).scrollTop();
+              var docViewBottom = docViewTop + $(window).height();
+
+              var elemTop = $(element).offset().top;
+              var elemBottom = elemTop + $(element).height();
+              var elemTop2 = $(element2).offset().top;
+              var elemBottom2 = elemTop2 + $(element2).height();
+
+              if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop) && runCount==0 ) {
+                  myFunction();
+              }
+              else if ((elemBottom2 <= docViewBottom) && (elemTop2 >= docViewTop) ) {
+                  myFunctionReset();
+              }
+          });
+
+        });
+    </script>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
