@@ -26,21 +26,27 @@
       <header class="fixed">
         <div class="f-header">
           <div class="inner-banner hide-for-small-only">
+            <!--SHIFTING SCREEN: FOR BIG SCREENS-->
             <!--PUT LOGO AND LABEL HERE-->
             <div class="header-image">
               <a href="#"><img src="img/osa-logo.png"/></a>
             </div>
             <div class="header-text">
-              <h5 id="header-minor">University of the Philippines Los Baños</h5>
-              <h2 id="header-major">Office of Student Affairs</h2>
+              <a href="#">
+                <h5 id="header-minor">University of the Philippines Los Baños</h5>
+                <h2 id="header-major">Office of Student Affairs</h2>
+              </a>
             </div>
           </div>
           <div class="inner-banner show-for-small-only">
+            <!--SHIFTING SCREEN: FOR SMALL SCREENS-->
             <!--PUT LOGO AND LABEL HERE-->
             <div class="header-text">
-              <a href="#"><img style="width:50px;height:50px;margin-top:5px;" src="img/osa-logo.png"/></a><br><br>
-              <h5 id="header-minor">University of the Philippines Los Baños</h5>
-              <h2 id="header-major">Office of Student Affairs</h2>
+              <a href="#">
+                <img class="head-img-small" style="width:50px;height:50px;margin-top:5px;" src="img/osa-logo.png"/><br><br>
+                <h5 id="header-minor">University of the Philippines Los Baños</h5>
+                <h2 id="header-major">Office of Student Affairs</h2>
+              </a>
             </div>
           </div>
           <div class="below-header">
@@ -137,7 +143,7 @@
                             <a><img style="width:auto;" src="img/upmail.png"/></a>
                             <input type="text" value="" placeholder="Username" id="username" name="small-modal-input" autofocus required/>
                             <input type="password" value="" placeholder="Password" id="password" required/>
-                            <a class="loginbtn button">Submit</a>
+                            <a class="loginbtn button">Log In</a>
                             <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
                           </form>
                         </div>
@@ -150,7 +156,7 @@
                               <a><img style="text-align:center;" src="img/upmail.png"/></a>
                               <input type="text" value="" placeholder="Username" id="thisusername" name="big-modal-input" autofocus="autofocus" required/>
                               <input type="password" value="" placeholder="Password" id="password" required/>
-                              <a class="loginbtn button">Submit</a>
+                              <a class="loginbtn button">Log In</a>
                               <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
                               </form>
                             </li>
@@ -170,20 +176,6 @@
                         </div>
                       </div>  
                   </li>
-                  <!--
-                  <div class="target">
-                    <div id="dropLogin">
-                      <div class="login-block">
-                          <h1>Log In</h1>
-                          <a><img src="img/upmail.png"/></a>
-                          <input type="text" value="" placeholder="Username" id="username" />
-                          <input type="password" value="" placeholder="Password" id="password" />
-                          <a style="vertical-align:middle;" class="loginbtn button">Submit</a><br><br>
-                          <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
-                      </div>  
-                    </div>
-                  </div>
-                  -->
                 </ul>
                 <ul class="right hide-when-not-fit">
                   <li>
@@ -201,18 +193,19 @@
       </header>
     <!--END OF HEADER-->
 
-    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br class="hide-on-extremely-small"><br class="hide-on-extremely-small">
     
     <!--CONTENTS-->
     <div class="medium-12 columns">
       <!--ORBIT SAMPLE-->
+
       <br class="show-for-small-only">
       <div class="slider single-item center-children medium-12 columns">
-        <div><img class="orbit-pic" src="img/orbit1.png"/></div>
-        <div><img class="orbit-pic" src="img/orbit2.png"/></div>
-        <div><img class="orbit-pic" src="img/orbit3.png"/></div>
-        <div><img class="orbit-pic" src="img/orbit4.png"/></div>
-        <div><img class="orbit-pic" src="img/orbit5.jpg"/></div>
+        <div><img class="orbit-pic" src="img/orbit1.png"/><h2 class="slick-caption">97th Loyalty Day and Alumni Homecoming</h2></div>
+        <div><img class="orbit-pic" src="img/orbit2.png"/><h2 class="slick-caption">National Conference of Food &amp; Nutrition Security</h2></div>
+        <div><img class="orbit-pic" src="img/orbit3.png"/><h2 class="slick-caption">4th Humphrey Voices Series &amp; DDC-CDC Seminar</h2></div>
+        <div><img class="orbit-pic" src="img/orbit4.png"/><h2 class="slick-caption">105th UPLB-CFNR Founding Anniversary</h2></div>
+        <div><img class="orbit-pic" src="img/orbit5.jpg"/><h2 class="slick-caption">Congratulations!</h2></div>
       </div>
 
       <!--WHAT'S UP SECTION-->
@@ -337,21 +330,11 @@
               <a href="#">OSA scholar graduates as top of the class</a>
             </h5>
           </li>
-          <li>
-            <div>
-              <a href="#"><img src="img/news5.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" /></a>
-              <h5 style="font-size:10pt;text-align:center;">
-                <a href="#">OSA celebrates its 55 years of existence, looking back and beyond</a>
-              </h5>
-            </div>
-          </li>
-          <li>
-            <div class="morenews">
-              <a><img src="img/more1.png" class="pad-rbl" title="More News" /></a>
-              <div class="mask"></div>
-            </div>
-          </li>
+          <hr>
         </ul>
+        <h5 style="font-size:12pt;text-align:center;">
+          <a href="#">[more news]</a><br><br>
+        </h5>
 
         <!--THIS IS FOR SOME IMPORANT STATS-->
         <div id="statDiv" class="panel hide-for-small-only" style="background-color:#cccccc;">
@@ -404,70 +387,36 @@
           <br>
           <section class="component"> 
             <!--OSAM BULLETIN PLUG IN-->
-            <!--SCREEN SHIFT: SMALL SCREENS ONLY-->
-            <div class="center-carousel show-for-small-only center-children">
+            <div class="center-carousel center-children">
               <div class="center-carousel-div">
                 <img src="img/bul1.jpg" style="max-height: 200px; margin:auto;" />
                 <a style="text-align">Winter Seminar on Human Security Development and Energy Science</a>
+                <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
+                <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
               </div>
               <div class="center-carousel-div">
                 <img src="img/bul2.jpg" style="max-height: 200px;margin:auto;" />
                 <a>Title Two</a>
+                <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
+                <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
               </div>
               <div class="center-carousel-div">
                 <img src="img/bul3.jpg" style="max-height: 200px;margin:auto;" />
                 <a>Title Three</a>
-              </div>
-            </div>
-            <!--SCREEN SHIFT: BIG SCREENS ONLY-->
-            <div class="center-carousel hide-for-small-only">
-              <div class="center-carousel-div">
-                <ul class="small-block-grid-2">
-                  <li>
-                    <img src="img/bul1.jpg" />
-                  </li>
-                  <li>
-                    <a>Winter Seminar on Human Security Development and Energy Science</a>
-                    <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
-                    <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="center-carousel-div">
-                <ul class="small-block-grid-2">
-                  <li>
-                    <img src="img/bul2.jpg" />
-                  </li>
-                  <li>
-                    <a>Title Two</a>
-                    <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
-                    <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="center-carousel-div">
-                <ul class="small-block-grid-2">
-                  <li>
-                    <img src="img/bul3.jpg" />
-                  </li>
-                  <li>
-                    <a>Title Three</a>
-                    <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
-                    <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
-                  </li>
-                </ul>
+                <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
+                <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
               </div>
             </div>
           </section>
         </div>
 
-        <!--PUT SOME IMPORTANT STATS HERE-->
+        <!--STUDENT TESTIMONIALS-->
         <div class="panel  hide-for-small-only">
           <div class="clearer-title">
             <div style="float:left;" class="superx2-small-screen">Student's Testimonials</div><br>
           </div>
           <!--This div is for the existing student testimonials-->
-          <div style="overflow-y: scroll;overflow-x: hidden;height:380px;">
+          <div style="overflow-y: scroll;overflow-x: hidden;height:405px;">
 
             <ul id="testimonials"> 
               <li>
@@ -508,8 +457,9 @@
     <br>
 
     <!--START OF FOOTER-->
-    <div class="medium-12 columns panel" id="osa-footer" style="margin-bottom:0px;">
+    <div class="medium-12 columns panel" id="osa-footer">
       <!--OSAM System Description-->
+      <img src="img/merge-logo.png" class="show-for-small-only" style="margin-left:auto;margin-right:auto;"/>
       <div class="medium-4 columns">
         <h4><strong style="color: #ffffff;">OSAM System</strong><br>
           <small>
@@ -519,30 +469,29 @@
         </h4><br>
       </div>
       <!--OSA AND UPLB LOGO-->
-      <div class="medium-3 columns">
-        <img src="img/merge-logo.png" class="footer-img"/>
-        <!--
-        <br><img src="img/osa-logo.png" class="footer-img hide-for-small-only" />
-        <img src="img/uplb-logo.png" class="footer-img hide-for-small-only" />
-        -->
+      <div class="medium-3 columns footer-img">
+        <div class="row">
+          <div class="large-6 columns"><img src="img/osa-logo.png" class="footer-img hide-for-small-only"/></div>
+          <div class="large-6 columns"><img src="img/uplb-logo.png" class="footer-img hide-for-small-only"/></div>
+        </div>
       </div>
+      <hr class="show-for-small-only" style="opacity: 0.5;">
       <!--CONTACT OSA-->
       <div class="medium-5 columns">
         <div class="medium-12 columns">
-          <h4>
-              <small>
-                <strong>OFFICE OF STUDENT AFFAIRS</strong><br> 
-                <a disable style="margin-bottom:-50px;"><i class="fa fa-phone"></i> 536-2238</a></br>
-                <a disable><i class="fa fa-envelope-o"></i>  contact@uplbosa.org</a></br>
-                <a disable><i class="fa fa-map-marker"></i>  Room 2, 2/F, Student Union Building, UPLB, Laguna, 4031</a></br>
-                Or text <a style="color: #ffffff;" disable>help [space] inquires</a> and send to <a style="color: #ffffff;" disable>2929200</a>.<br>
+          <h4 style="padding:0;" class="footer-details">
+              <small style="color:#666666">
+                <strong style="color:#ffffff;">UPLB OFFICE OF STUDENT AFFAIRS</strong><br> 
+                <i class="fa fa-map-signs"></i>&nbsp;&nbsp;&nbsp;Room 2, 2/F, Student Union Building, UPLB, Laguna, 4031</br>
+                <i class="fa fa-desktop"></i>&nbsp;&nbsp;&nbsp;contact@uplbosa.org</br>
+                <i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;536-2238</br>
+                <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;HELP [space] INQUIRIES to 2929200</br>
               </small><br>
               <ul class="inline-list">
-                <li style="margin-left:0; margin-right: 10px; color: #ffffff;" disable>Connect with us!</li> 
-                <li style="margin: auto;"><a href="#"><img src="img/facebook.png" style="width:30px;"/></a></li>
-                <li style="margin: auto;"><a href="#"><img src="img/twitter.png" style="width:30px;"/></a></li>
-                <li style="margin: auto;"><a href="#"><img src="img/youtube.png" style="width:30px;"/></a></li>
-                <li style="margin: auto;"><a href="#"><img src="img/gplus.png" style="width:30px;"/></a></li>
+                <li style="margin: auto;" class="sns-icons"><a href="#"><img src="img/facebook.png" style="width:30px;"/></a></li>
+                <li style="margin: auto;" class="sns-icons"><a href="#"><img src="img/twitter.png" style="width:30px;"/></a></li>
+                <li style="margin: auto;" class="sns-icons"><a href="#"><img src="img/youtube.png" style="width:30px;"/></a></li>
+                <li style="margin: auto;" class="sns-icons"><a href="#"><img src="img/gplus.png" style="width:30px;"/></a></li>
               </ul>
           </h4>
         </div>
@@ -654,15 +603,16 @@
 
               var elemTop = $(element).offset().top;
               var elemBottom = elemTop + $(element).height();
-              var elemTop2 = $(element2).offset().top;
-              var elemBottom2 = elemTop2 + $(element2).height();
 
               if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop) && runCount==0 ) {
                   myFunction();
               }
-              else if ((elemBottom2 <= docViewBottom) && (elemTop2 >= docViewTop) ) {
-                  myFunctionReset();
-              }
+          });
+
+          causeRepaintsOn = $(".slick-caption");
+
+          $(window).resize(function() {
+            causeRepaintsOn.css("z-index", 1);
           });
 
         });

@@ -39,3 +39,24 @@ October 13, 2015
 October 14, 2015
 * fixed: countup in stats will start on "onscreen"
 * documented app.css
+
+October 16, 2015
+* changed submit to log in
+* fixed: set whole header chunk as link to home
+* aligned all top-bar-menu of small screens on left
+* put sample text on orbit
+* removed 1 news on small screen
+* removed reset on countUp
+* UPLB OFFICE OF STUDENT AFFAIRS on footer
+* put tab after icon on footer
+* put an icon on text help
+* lower opacity of social networking sites icons
+* removed the word connect with us
+* set box-height on OSAM Bulletin
+* rearranged OSAM Bulletin content for slick arrow adjustment
+* fixed: check responsiveness on even bigger screen (about 1300)
+* fixed: mobile adaptive topbar (logo only on small screens)
+* fixed: on small screen, put the logo at the top
+* fixed: on small screen, put the logo at the center
+* fixed: on some screen, make logo vertical
+* made all links color maroon like in the present site

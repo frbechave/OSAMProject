@@ -70,9 +70,10 @@
     font-size: 25px;
     line-height: 1;
 
-    opacity: .75;
+    /* CHANGED opacity from 0.75 */ 
+    opacity: .5;
     /*CHANGED color: white;*/
-    color: #500000;
+    color: #333333;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -81,13 +82,13 @@
 .slick-prev
 {
     /*Previously left: -25px;*/
-    left: 2%;
+    left: 20px;
     z-index: 50;
 }
 [dir='rtl'] .slick-prev
 {
     /*Previously right: -25px;*/
-    right: 2%;
+    right: 20px;
     left: auto;
     z-index: 50;
 }
@@ -103,14 +104,14 @@
 .slick-next
 {
     /*Previously right: -25px;*/
-    right: 2%;
+    right: 20px;
     z-index: 50;
 }
 [dir='rtl'] .slick-next
 {
     /*Previously left: -25px;*/
     right: auto;
-    left: 2%;
+    left: -20px;
     z-index: 50;
 }
 .slick-next:before
@@ -209,4 +210,8 @@
 {
     opacity: .75;
     color: black;
+}
+
+.slick-slide:hover{
+
 }
