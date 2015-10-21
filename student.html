@@ -6,99 +6,129 @@
       
       <title>Welcome - Office of Student Affairs, UPLB</title>
       
-      <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
-      <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
-      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <!--FOR SLICK CAROUSEL-->
+      <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+      <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+      <!--FOR OVERALL DESIGNS-->
       <link rel="stylesheet" href="css/foundation.css" />
       <link rel="stylesheet" href="css/app.css"/>
-
-      <script src="js/vendor/modernizr.js"></script>
+      <!--POSSIBLE ICONS-->
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <!--FOR OVERALL JAVASCRIPT-->
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="js/vendor/modernizr.js"></script> 
+      <script src="js/countUp.js"></script> 
   </head>
 
   <body>
-
-
       <!--LITTLE NAV AT THE BOTTOM OF THE HEADER-->
-      <div class="header below-header">
-        <nav class="top-bar" data-topbar role="navigation">
-          <ul class="title-area">
-            <li class="name"></li>
-            <li class="toggle-topbar menu-icon left"><a href="#"><span></span></a></li>
-          </ul>
+      <header class="fixed">
+        <div class="f-header">
+          <div class="inner-banner hide-for-small-only">
+            <!--SHIFTING SCREEN: FOR BIG SCREENS-->
+            <!--PUT LOGO AND LABEL HERE-->
+            <div class="header-image">
+              <a href="#"><img src="img/osa-logo.png"/></a>
+            </div>
+            <div class="header-text">
+              <a href="#">
+                <h5 id="header-minor">University of the Philippines Los Baños</h5>
+                <h2 id="header-major">Office of Student Affairs</h2>
+              </a>
+            </div>
+          </div>
+          <div class="inner-banner show-for-small-only">
+            <!--SHIFTING SCREEN: FOR SMALL SCREENS-->
+            <!--PUT LOGO AND LABEL HERE-->
+            <div class="header-text">
+              <a href="#">
+                <img class="head-img-small" style="width:50px;height:50px;margin-top:5px;" src="img/osa-logo.png"/><br><br>
+                <h5 id="header-minor">University of the Philippines Los Baños</h5>
+                <h2 id="header-major">Office of Student Affairs</h2>
+              </a>
+            </div>
+          </div>
+          <div class="below-header">
+            <nav class="top-bar sticky" data-topbar role="navigation">
+              <ul class="title-area">
+                <li class="name show-for-small-only">STUDENT NAME</li>
+                <li class="toggle-topbar menu-icon left"><a href="#"><span></span></a></li>
+              </ul>
 
-          <section class="top-bar-section">
-            <ul class="left">
-              <li>
-                <a href= class="">Home</a>
-              </li>
-              <li class="divider"></li>
-              <li class="has-dropdown">
-                <a href="#">About OSA</a>
-                <ul class="dropdown">
-                  <li><a href="#">What is OSAM?</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Mission and Vision</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Message from the Director</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Career Opportunities</a></li>
-                </ul>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href= class="">Contact OSA</a>
-              </li>
-              <li class="divider"></li>
-              <li class="has-dropdown">
-                <a href="#">Services</a>
-                <ul class="dropdown">
-                  <li class="has-dropdown">
-                    <a href="#">Student Orgs</a>
-                    <ul class="dropdown">
-                      <li><a href="#">Recognized Orgs</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Apply for Recognition</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Recognition Guideline</a></li>
-                    </ul>
+              <section class="top-bar-section">
+                <ul class="left">
+                  <li>
+                    <a href="">Home</a>
                   </li>
                   <li class="divider"></li>
                   <li class="has-dropdown">
-                    <a href="#">Financial Assistance</a>
+                    <a href="#">About OSA</a>
                     <ul class="dropdown">
-                      <li><a href="#">Scholarships</a></li>
+                      <li><a href="#">What is OSAM?</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">Student Assistanchip</a></li>
+                      <li><a href="#">Mission and Vision</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">Socialized Tuition System (STS)</a></li>
+                      <li><a href="#">Message from the Director</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">Student Loan Board (SLB)</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Cash Loans</a></li>
+                      <li><a href="#">Career Opportunities</a></li>
                     </ul>
                   </li>
                   <li class="divider"></li>
-                  <li><a href="#">Counselling</a></li>
+                  <li>
+                    <a href= class="">Contact OSA</a>
+                  </li>
                   <li class="divider"></li>
                   <li class="has-dropdown">
-                    <a href="#">Downloads</a>
+                    <a href="#">Services</a>
                     <ul class="dropdown">
-                      <li><a href="#">S.A. Separation Form</a></li>
+                      <li class="has-dropdown">
+                        <a href="#">Student Orgs</a>
+                        <ul class="dropdown">
+                          <li><a href="#">Recognized Orgs</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Apply for Recognition</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Recognition Guideline</a></li>
+                        </ul>
+                      </li>
                       <li class="divider"></li>
-                      <li><a href="#">Academic Calendar</a></li>
+                      <li class="has-dropdown">
+                        <a href="#">Financial Assistance</a>
+                        <ul class="dropdown">
+                          <li><a href="#">Scholarships</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Student Assistanchip</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Socialized Tuition System (STS)</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Student Loan Board (SLB)</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Cash Loans</a></li>
+                        </ul>
+                      </li>
                       <li class="divider"></li>
-                      <li><a href="#">Telephone Directory</a></li>
+                      <li><a href="#">Counselling</a></li>
                       <li class="divider"></li>
-                      <li><a href="#">UPTIME OSA Newsletter</a></li>
+                      <li class="has-dropdown">
+                        <a href="#">Downloads</a>
+                        <ul class="dropdown">
+                          <li><a href="#">S.A. Separation Form</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Academic Calendar</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">Telephone Directory</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">UPTIME OSA Newsletter</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#">OSA Annual Report</a></li>
+                        </ul>
+                      </li>
                       <li class="divider"></li>
-                      <li><a href="#">OSA Annual Report</a></li>
+                      <li><a href="#">Mailing List</a></li>
                     </ul>
                   </li>
                   <li class="divider"></li>
-                  <li><a href="#">Mailing List</a></li>
-                </ul>
-              </li>
-              <li class="divider"></li>
               <li class="has-dropdown">
                 <a href="#">Student Menu</a>
                 <ul class="dropdown">
@@ -137,45 +167,66 @@
                   <li><a href="#">University Clearance</a></li>
                 </ul>
               </li>
-              <li class="divider"></li>
-              <li class="has-form">
-                <!--INSERT YOUR LOG OUT FORM HERE-->
-                <a href="#" data-reveal-id="myModal" class="button">Log Out</a>
-                  <div id="myModal" class="tiny reveal-modal remove-whitespace [expand, xlarge, large, medium, small]" data-reveal>
-                  <div class="row" style="display:block; float:center;">
-                      <div class="large-12 columns auth-plain">
-                        <div class="signup-panel">
-                          <p class="welcome"><strong>Are you sure you want to log out?</strong></p>
-                           <div class="button-group" data-grouptype="OR">
-                            <a href="index.html" class="small button primary radius">Log Out</a>
-                            <a href="student.html" class="small button secondary radius">Cancel</a>
-                          </div>
-                        </div>
+                  <li class="divider show-for-small-only"></li>
+                  <li class="show-for-small-only"><a href="#">Search</a></li>
+                  <li class="divider"></li>
+                  <li class="has-form">
+                    <!--<a id="toggle" class="button secondary"> Log In </a>-->
+                    <!-- THIS IS THE LOGIN MODAL -->
+                    <a href="#" data-reveal-id="myModal" id="toggle" class="secondary button">Log Out</a>
+
+                    <!-- Reveal Modals begin -->
+                    <div id="myModal" class="reveal-modal tiny" data-reveal aria-hidden="true" style="margin-left:auto;margin-right;position:fixed;padding:0;" role="dialog">
+                        <div class="login-block" style="width:100%;">
+                        <!--SHIFTING: For small screen-->
+                        <h1>Hi Student Name!</h1>
+                        <h5>Are you sure you want to leave your profile?</h5>
+                        <br>
+                        <ul class="inline-list" style="text-align:center;">
+                          <li><a class="cancelbtn button">Cancel</a></li>
+                          <li><a class="loginbtn button">Log Out</a></li>
+                        </ul>                       
                       </div>
-                    </div>   
-                    <a class="close-reveal-modal">&#215;</a>
-                  </div> 
-                <!--END OF LOG IN FORM-->
-              </li>
-            </ul>
-          </section>
-        </nav>
-        <!--END OF NAVS-->
-      </div>
-    </header> 
+                      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="right hide-when-not-fit">
+                  <li>
+                    <input type="text">
+                  </li>
+                  <li style="margin-right:10px;">
+                    <a href="#" class="button secondary">Search</a>
+                  </li>
+                </ul>
+              </section>
+            </nav>
+            <!--END OF NAVS-->
+          </div>
+        </div>
+      </header>
     <!--END OF HEADER-->
 
-    <br><br><br><br><br><br><br><br>
-    <br class="show-for-small-only center">
-    <br class="show-for-small-only center">
+    <br><br><br><br><br><br class="hide-on-extremely-small"><br class="hide-on-extremely-small">
 
     <!--CONTENTS-->
-    <div class="row">
+    <div style="width:97%;margin:auto;">
+      <!--ORBIT SAMPLE-->
+
+      <br class="show-for-small-only">
+      <div class="slider single-item center-children medium-12 columns">
+        <div><img class="orbit-pic" src="img/orbit1.png"/><h2 class="slick-caption">97th Loyalty Day and Alumni Homecoming</h2></div>
+        <div><img class="orbit-pic" src="img/orbit2.png"/><h2 class="slick-caption">National Conference of Food &amp; Nutrition Security</h2></div>
+        <div><img class="orbit-pic" src="img/orbit3.png"/><h2 class="slick-caption">4th Humphrey Voices Series &amp; DDC-CDC Seminar</h2></div>
+        <div><img class="orbit-pic" src="img/orbit4.png"/><h2 class="slick-caption">105th UPLB-CFNR Founding Anniversary</h2></div>
+        <div><img class="orbit-pic" src="img/orbit5.jpg"/><h2 class="slick-caption">Congratulations!</h2></div>
+      </div>
+
       <!--WHAT'S UP SECTION-->
       <div class="medium-7 columns">
         <br>
         <div class="clearer-title">
-          <div style="float:left;">What's Up?</div><br>
+          <div style="float:left;" class="super-small-screen" >What's Up?</div><br>
         </div>
         <br>
 
@@ -190,7 +241,7 @@
                 <a href="#">OSA holds first recognition day for graduating UPLB Gabay Volunteers</a>
               </h5>
               <div class="sidekick">10 July 2015</div>
-              <p> The Counseling and Testing Division (CTD) under the Office of Student Affairs (OSA) recognized 13 graduating members of the UPLB Gabay Volunteer Corps on 4 July 2015 at the Makiling Hall, Student Union ... 
+              <p class="please-justify"> The Counseling and Testing Division (CTD) under the Office of Student Affairs (OSA) recognized 13 graduating members of the UPLB Gabay Volunteer Corps on 4 July 2015 at the Makiling Hall, Student Union ... 
                 <a href="#">[continue reading]</a>
               </p>
             </div>
@@ -205,7 +256,7 @@
                 <a href="#">OSA looks back as it celebrates its 55th anniversary</a>
               </h5>
               <div class="sidekick">7 July 2015</div>
-                <p>Looking back and beyond. Old and new faces from Office of Student Affairs (OSA) gathered at the Makiling Hall, Student Union Building on 24 June 2015 to culminate its month-long anniversary celebration. There ... 
+                <p class="please-justify">Looking back and beyond. Old and new faces from Office of Student Affairs (OSA) gathered at the Makiling Hall, Student Union Building on 24 June 2015 to culminate its month-long anniversary celebration. There ... 
                   <a href="#">[continue reading]</a>
                 </p>
             </div>
@@ -221,7 +272,7 @@
                 </a>
               </h5>
               <div class="sidekick">6 July 2015</div>
-              <p> On 2 July 2015, Makiling Hall became a witness to the induction of UPLB’s nine new Ambassadors of Goodwill. Wearing their national attires, the graduates pledged to continue the practice of honor and excellence ... 
+              <p class="please-justify"> On 2 July 2015, Makiling Hall became a witness to the induction of UPLB’s nine new Ambassadors of Goodwill. Wearing their national attires, the graduates pledged to continue the practice of honor and excellence ... 
                 <a href="#">[continue reading]</a>
               </p>
             </div>
@@ -236,7 +287,7 @@
                 <a href="#">OSA scholar graduates as top of the class</a>
               </h5>
               <div class="sidekick">2 July 2015</div>
-              <p> He gets up, takes a shower, walks to a lecture room then suddenly realizes that he is not yet ready for the quiz that day. So 10 minutes before the class, he crams all his notes in the hope of getting at least a ... 
+              <p class="please-justify"> He gets up, takes a shower, walks to a lecture room then suddenly realizes that he is not yet ready for the quiz that day. So 10 minutes before the class, he crams all his notes in the hope of getting at least a ... 
                 <a href="#">[continue reading]</a>
               </p>
             </div>
@@ -251,7 +302,7 @@
                 <a href="#">OSA celebrates its 55 years of existence, looking back and beyond</a>
               </h5>
               <div class="sidekick">26 June 2015</div>
-              <p> The Office of the Students Affairs (OSA) paraded to their 55th Anniversary with the theme Looking Back and Beyond on 23 June 2015. In the last week of its month-long celebration, OSA victoriously celebrated its ... 
+              <p class="please-justify"> The Office of the Students Affairs (OSA) paraded to their 55th Anniversary with the theme Looking Back and Beyond on 23 June 2015. In the last week of its month-long celebration, OSA victoriously celebrated its ... 
                 <a href="#">[continue reading]</a>
               </p>
             </div>
@@ -263,7 +314,7 @@
         <ul class="small-block-grid-2 show-for-small-only">
           <li>
             <div>
-              <img style="width:230px;;height:170px;" src="img/news1.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" />
+              <a href="#"><img src="img/news1.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" /></a>
             </div>
             <h5 style="font-size:10pt;text-align:center;">
               <a href="#">OSA holds first recognition day for graduating UPLB Gabay Volunteers</a>
@@ -271,7 +322,7 @@
           </li>
           <li>
             <div>
-              <img style="width:230px;height:170px;" src="img/news2.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" />
+              <a href="#"><img src="img/news2.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" /></a>
             </div>
             <h5 style="font-size:10pt;text-align:center;">
               <a href="#">OSA looks back as it celebrates its 55th anniversary</a>
@@ -279,7 +330,7 @@
           </li>
           <li>
             <div>
-              <img style="width:230px;height:170px;" src="img/news3.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" />
+              <a href="#"><img src="img/news3.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" /></a>
             </div>
             <h5 style="font-size:10pt;text-align:center;">
               <a href="#">UPLB inaugurates new Ambassadors of Goodwill</a>
@@ -287,47 +338,38 @@
           </li>
           <li>
             <div>
-              <img style="width:230px;height:170px;" src="img/news4.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" />
+              <a href="#"><img src="img/news4.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" /></a>
             </div>
             <h5 style="font-size:10pt;text-align:center;">
               <a href="#">OSA scholar graduates as top of the class</a>
             </h5>
           </li>
-          <li>
-            <div>
-              <a href="#"><img style="width:230px;height:170px;" src="img/news5.jpg" class="pad-rbl" title="OSA scholar graduates as top of the class" /></a>
-              <h5 style="font-size:10pt;text-align:center;">
-                <a href="#">OSA celebrates its 55 years of existence, looking back and beyond</a>
-              </h5>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a><img style="width:230px;height:170px;" src="img/news.jpg" class="pad-rbl" title="More News" /></a>
-            </div>
-          </li>
+          <hr>
         </ul>
+        <h5 style="font-size:12pt;text-align:center;">
+          <a href="#">[more news]</a><br><br>
+        </h5>
 
         <!--THIS IS FOR SOME IMPORANT STATS-->
-        <div class="panel" style="background-color:#cccccc;">
+        <div id="statDiv" class="panel hide-for-small-only" style="background-color:#cccccc;">
           <div class="clearer-title">
             <div style="float:left;">Some Important Statistics</div><br>
           </div><br>
           <ul class="small-block-grid-4"  style="text-align:center;">
             <li>
-              <h2 style="float:center"><span>0</span></h2>
+              <h2 style="float:center" id="stats1"><span>0</span></h2>
               <p class="count-caption">Vacant Student Assistant Position</p>
             </li>
             <li>
-              <h2 style="float:center"><span>0</span></h2>
+              <h2 style="float:center" id="stats2"><span>0</span></h2>
               <p class="count-caption">Vacant Student Assistant Position</p>
             </li>
             <li>
-              <h2 style="float:center"><span>0</span></h2>
+              <h2 style="float:center" id="stats3"><span>0</span></h2>
               <p class="count-caption">Vacant Student Assistant Position</p>
             </li>
             <li>
-              <h2 style="float:center"><span>0</span></h2>
+              <h2 style="float:center" id="stats4"><span>0</span></h2>
               <p class="count-caption">Vacant Student Assistant Position</p>
             </li>
           </ul>
@@ -338,7 +380,7 @@
       <div class="medium-5 columns">
         <div class="panel">
           <div class="clearer-title">
-            <div style="float:left;">What's Happening?</div><br>
+            <div class="super-small-screen" style="float:left;">What's Happening?</div><br>
           </div>
 
           <section class="component"> 
@@ -347,77 +389,48 @@
             <iframe class="fb-like-box" src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fuplbosa&width=500&height=100&colorscheme=light&show_faces=false&header=true&stream=false&show_border=true" scrolling="no" frameborder="0" allowTransparency="true"></iframe> 
             -->
             <!--GOOGLE CALENDAR PLUG IN-->
+            
             <iframe class="googlemaps" width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/calendar/embed?showTitle=0&showNav=0&showPrint=0&showCalendars=0&showTz=0&mode=AGENDA&height=300&wkst=1&bgcolor=%23FFFFFF&src=uplbosa.org_8o0da47g5ueg2bfcks981al5n0%40group.calendar.google.com&color=%23711616&ctz=Asia%2FManila&hl=en"></iframe>
             
           </section>
         </div>
-        <div class="panel">
+        <div class="panel osam-bulletin" style="width=50%;">
           <div class="clearer-title">
-            <div style="float:left;">OSAM Bulletin</div><br>
+            <div style="float:left;" class="super-small-screen" >OSAM Bulletin</div><br>
           </div>
           <br>
           <section class="component"> 
             <!--OSAM BULLETIN PLUG IN-->
-            <div class="center-carousel">
+            <div class="center-carousel center-children">
               <div class="center-carousel-div">
-                <ul class="small-block-grid-2">
-                  <li>
-                    <img src="img/bul1.jpg" />
-                  </li>
-                  <li>
-                    <a>Winter Seminar on Human Security Development and Energy Science</a>
-                    <p class="sidekick">posted on 31 July 2015</p>
-                    <p class="smaller">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
-                  </li>
-                </ul>
+                <img src="img/bul1.jpg" style="max-height: 200px; margin:auto;" />
+                <a style="text-align">Winter Seminar on Human Security Development and Energy Science</a>
+                <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
+                <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
               </div>
               <div class="center-carousel-div">
-                <ul class="small-block-grid-2">
-                  <li>
-                    <img src="img/bul2.jpg" />
-                  </li>
-                  <li>
-                    <a>Title Two</a>
-                    <p class="sidekick">posted on 31 July 2015</p>
-                    <p class="smaller">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
-                  </li>
-                </ul>
+                <img src="img/bul2.jpg" style="max-height: 200px;margin:auto;" />
+                <a>Title Two</a>
+                <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
+                <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
               </div>
               <div class="center-carousel-div">
-                <ul class="small-block-grid-2">
-                  <li>
-                    <img src="img/bul3.jpg" />
-                  </li>
-                  <li>
-                    <a>Title Three</a>
-                    <p class="sidekick">posted on 31 July 2015</p>
-                    <p class="smaller">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
-                  </li>
-                </ul>
+                <img src="img/bul3.jpg" style="max-height: 200px;margin:auto;" />
+                <a>Title Three</a>
+                <p class="sidekick hide-for-small-only">posted on 31 July 2015</p>
+                <p class="smaller hide-for-small-only hide-in-bulletin">Kyoto University Graduate School of Energy Science invites undergraduate students to the Winter Seminar on Human Security Development and Energy Science on 11-23 January 2016 at Kyoto University, Japan. Deadline of application is on 10 September 2015.</p>
               </div>
             </div>
-
-            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>   
-            <script type="text/javascript">
-                $(document).ready(function(){
-                  $('.center-carousel').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  });
-                });
-            </script>
           </section>
         </div>
 
-        <!--PUT SOME IMPORTANT STATS HERE-->
-        <div class="panel">
+        <!--STUDENT TESTIMONIALS-->
+        <div class="panel  hide-for-small-only">
           <div class="clearer-title">
-            <div style="float:left;">Student's Testimonials</div><br>
+            <div style="float:left;" class="superx2-small-screen">Student's Testimonials</div><br>
           </div>
           <!--This div is for the existing student testimonials-->
-          <div style="overflow:scroll; height:230px;">
+          <div style="overflow-y: scroll;overflow-x: hidden;height:320px;">
 
             <ul id="testimonials"> 
               <li>
@@ -448,60 +461,191 @@
                 <div class="clearer"></div>
               </li>
             </ul>
-          </div><br>
-          <div class="row">
+          </div>
+          <div class="row" style="margin-top:20px;">
             <div class="large-9 columns">
               <label>
                 <textarea placeholder="What's on your mind?"></textarea>
               </label>
-              <a style="float:right;background-color:#830000;" href="#" class="button tiny">Post</a>
+            </div>
+            <div class="large-3 columns">
+              <a style="float:right;background-color:#830000;" href="#" class="button">Post</a>
             </div>
           </div>
         </div>
       </div>
+
     </div>
     <!--END OF CONTENTS--> 
 
     <br>
 
     <!--START OF FOOTER-->
-    <div class="medium-12 columns panel" id="osa-footer" style="margin-bottom:0px;">
+    <div class="medium-12 columns panel" id="osa-footer">
       <!--OSAM System Description-->
+      <img src="img/merge-logo.png" class="show-for-small-only" style="margin-left:auto;margin-right:auto;"/>
       <div class="medium-4 columns">
         <h4><strong style="color: #ffffff;">OSAM System</strong><br>
           <small>
             The Office of Student Affairs Management (OSAM) System is a modernization project that keeps OSA up to date with industry standards. OSA is taking advantage of the benefits of Information Technology to promote students' academic growth and personal development. 
-            <a href="page-osam">[read more]</a> 
+            <a href="">[read more]</a> 
           </small>
         </h4><br>
       </div>
       <!--OSA AND UPLB LOGO-->
-      <div class="medium-3 columns">
-        <img src="img/merge-logo.png" class="footer-img"/>
-        <!--
-        <br><img src="img/osa-logo.png" class="footer-img hide-for-small-only" />
-        <img src="img/uplb-logo.png" class="footer-img hide-for-small-only" />
-        -->
+      <div class="medium-3 columns footer-img">
+        <div class="row">
+          <div class="large-6 columns"><img src="img/osa-logo.png" class="footer-img hide-for-small-only"/></div>
+          <div class="large-6 columns"><img src="img/uplb-logo.png" class="footer-img hide-for-small-only"/></div>
+        </div>
       </div>
+      <hr class="show-for-small-only" style="opacity: 0.5;">
       <!--CONTACT OSA-->
       <div class="medium-5 columns">
         <div class="medium-12 columns">
-          <h6><strong style="color: #ffffff; text-align:center">For general inquiries, email <a>contact@uplbosa.org</a>.</strong><br>
-              <small>
-                Mailing Address<a href=""> [see more]</a></br>
-                Director's Office (DO)<a href=""> [see more]</a></br>
-                Communication and Information Technology (COMMIT)<a href=""> [see more]</a></br>
-                Counseling and Testing Division (CTD)<a href=""> [see more]</a></br>
-                International Students Section (ISS)<a href=""> [see more]</a></br>
-                Scholarships and Financial Assistance Division (SFAD)<a href=""> [see more]</a></br>
-                Student Disciplinary Tribunal (SDT)<a href="page-osam"> [see more]</a></br>
-                Student Organizations and Activities Division (SOAD)<a href=""> [see more]</a></br>
-              </small>
-          </h6><br>
+          <h4 style="padding:0;" class="footer-details">
+              <small style="color:#666666">
+                <strong style="color:#ffffff;">UPLB OFFICE OF STUDENT AFFAIRS</strong><br> 
+                <i class="fa fa-map-signs"></i>&nbsp;&nbsp;&nbsp;Room 2, 2/F, Student Union Building, UPLB, Laguna, 4031</br>
+                <i class="fa fa-desktop"></i>&nbsp;&nbsp;&nbsp;contact@uplbosa.org</br>
+                <i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;536-2238</br>
+                <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;HELP [space] INQUIRIES to 2929200</br>
+              </small><br>
+              <ul style="float:left;" class="inline-list hide-for-small-only">
+                <li style="margin:0;" class="sns-icons"><a href="#"><img src="img/facebook.png" style="width:30px;"/></a></li>
+                <li style="margin:0;" class="sns-icons"><a href="#"><img src="img/twitter.png" style="width:30px;"/></a></li>
+                <li style="margin:0;" class="sns-icons"><a href="#"><img src="img/youtube.png" style="width:30px;"/></a></li>
+                <li style="margin:0;" class="sns-icons"><a href="#"><img src="img/gplus.png" style="width:30px;"/></a></li>
+              </ul>
+              <ul style="text-align:center;" class="show-for-small-only">
+                <li style="display:inline;" class="sns-icons"><a href="#"><img src="img/facebook.png" style="width:30px;"/></a></li>
+                <li style="display:inline;" class="sns-icons"><a href="#"><img src="img/twitter.png" style="width:30px;"/></a></li>
+                <li style="display:inline;" class="sns-icons"><a href="#"><img src="img/youtube.png" style="width:30px;"/></a></li>
+                <li style="display:inline;" class="sns-icons"><a href="#"><img src="img/gplus.png" style="width:30px;"/></a></li>
+              </ul>
+          </h4>
         </div>
       </div>
     </div>
     <!--END OF FOOTER-->
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>   
+    <script src="js/jquery.onscreen.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+          /* THESE ARE THE ANIMATIONS FOR THE COUNTUP */
+          var useOnComplete = false,
+            useEasing = true,
+            useGrouping = true,
+            options = {
+                useEasing : useEasing, // toggle easing
+                useGrouping : useGrouping, // 1,000,000 vs 1000000
+                separator : ',', // character to use as a separator
+            }
+
+          $("#toggle").click(function(){
+            setTimeout(function(){
+              $('#myModal').css( "top", "100px" );
+              $('#thisusername').focus();
+              $('#username').focus();
+            },500);              
+          });
+          $('.single-item').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000
+          });
+          $('.center-carousel').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+          });
+          $('.responsive').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 10,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 8,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 6,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 5,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+          
+          /* THIS IS FOR COUNT UP */
+          var element = $('#statDiv');
+          var element2 = $('.osam-bulletin');
+          var runCount = 0;
+
+          function myFunction() {
+              stat1 = new CountUp('stats1', 0, 98, 0, 2.5, options);
+              stat2 = new CountUp('stats2', 0, 56, 0, 2.5, options);
+              stat3 = new CountUp('stats3', 0, 12, 0, 2.5, options);
+              stat4 = new CountUp('stats4', 0, 72, 0, 2.5, options);
+              stat1.start();
+              stat2.start();
+              stat3.start();
+              stat4.start();
+              runCount = 1;
+          }
+
+          function myFunctionReset() {
+              runCount = 0;
+              document.getElementById("stats1").innerHTML = "0";
+              document.getElementById("stats2").innerHTML = "0";
+              document.getElementById("stats3").innerHTML = "0";
+              document.getElementById("stats4").innerHTML = "0";
+          }
+
+          $(window).scroll(function(){
+              var docViewTop = $(window).scrollTop();
+              var docViewBottom = docViewTop + $(window).height();
+
+              var elemTop = $(element).offset().top;
+              var elemBottom = elemTop + $(element).height();
+
+              if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop) && runCount==0 ) {
+                  myFunction();
+              }
+          });
+
+          causeRepaintsOn = $(".slick-caption");
+
+          $(window).resize(function() {
+            causeRepaintsOn.css("z-index", 1);
+          });
+
+        });
+    </script>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
@@ -510,4 +654,5 @@
       $(document).foundation();
     </script>
   </body>
+  
 </html>

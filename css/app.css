@@ -6,6 +6,9 @@
 a{
     color: #830000;
 }
+a:hover{
+    color: #500000;
+}
 
     /* HEADER */
     .f-header{
@@ -70,6 +73,11 @@ a{
     .top-bar-section .left .has-dropdown:hover{
         background-color: #474747;
     }
+    .name{
+        color: #fff;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 
         /* MODAL */
         #myModal{
@@ -77,17 +85,11 @@ a{
             border: rgba(254, 254, 254, 0);
             box-shadow: 0px 0px 0px #ffffff;
         }
-        #myModal-alt{
-            background: rgba(254, 254, 254, 0);
-            border: rgba(254, 254, 254, 0);
-            box-shadow: 0px 0px 0px #ffffff;
+        .reveal-modal {
+            width:100%;
         }
 
             /* LOG IN BOX IN MODAL / DROP DOWN */
-            #dropLogin{
-                margin-left: 80%;
-                margin-top: 9%;
-            }
             .login-block{
                 width: 250px;
                 padding: 20px;
@@ -98,7 +100,7 @@ a{
                 margin: 0 auto;
             } 
             .largeLogIn{
-                width: 80%;
+                width: 100%;
             }
             .login-block h1 {
                 text-align: center;
@@ -170,8 +172,27 @@ a{
                 outline: none;
                 cursor: pointer;
             }
+            .login-block .cancelbtn {
+                width: 100%;
+                height: 40px;
+                line-height:10px;
+                background: #e7e7e7;
+                border-radius: 5px;
+                border: 1px solid #fff;
+                color: #000;
+                font-weight: bold;
+                text-transform: uppercase;
+                vertical-align: middle;
+                font-size: 14px;
+                font-family: Montserrat;
+                outline: none;
+                cursor: pointer;
+            }
             .login-block .loginbtn:hover {
                 background: #830002;
+            }
+            .login-block .cancelbtn:hover {
+                background: #b9b9b9;
             }
 
 
@@ -412,7 +433,7 @@ a{
 /*hide search in navbar when it doesnt fit*/
 @media only screen and (max-width: 50.9375em) { 
     .hide-when-not-fit{
-        display: none;
+        visibility: hidden;
     }
 }
 
@@ -427,6 +448,10 @@ a{
 @media only screen and (max-width: 40em) { 
     nav.top-bar {
         text-align: left;
+    }
+
+    .close-reveal-modal{
+        /*EDIT POSITION OF X BUTTON*/
     }
 
     .f-header{
@@ -484,6 +509,9 @@ a{
         height: 60px;
         margin-top: 10px;
         position: relative;
+    }
+    .below-header{
+        box-shadow: none;
     }
 
 

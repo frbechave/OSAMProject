@@ -134,47 +134,48 @@
                   <li class="has-form">
                     <!--<a id="toggle" class="button secondary"> Log In </a>-->
                     <!-- THIS IS THE LOGIN MODAL -->
-                    <a href="#" data-reveal-id="myModal" id="toggle" class="button secondary">Log In</a>
-                      <div id="myModal" class="reveal-modal xlarge" style="display: none; margin:auto;" data-reveal>
-                        <div class="login-block show-for-small-only">
-                          <!--SHIFTING: For small screen-->
-                          <h1>Log In</h1>
-                          <form name="small-modal">
-                            <a><img style="width:auto;" src="img/upmail.png"/></a>
-                            <input type="text" value="" placeholder="Username" id="username" name="small-modal-input" autofocus required/>
-                            <input type="password" value="" placeholder="Password" id="password" required/>
-                            <a class="loginbtn button">Log In</a>
-                            <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
-                          </form>
-                        </div>
-                        <div class="login-block largeLogIn hide-for-small-only">
-                          <!--SHIFTING: For big screen-->
-                          <ul class="small-block-grid-2">
-                            <li>
+                    <a href="#" data-reveal-id="myModal" id="toggle" class="secondary button">Log In</a>
+
+                    <!-- Reveal Modals begin -->
+                    <div id="myModal" class="reveal-modal large" data-reveal aria-hidden="true" style="margin-left:auto;margin-right;position:fixed;padding:0;" role="dialog">
+                      <div class="login-block show-for-small-only">
+                              <!--SHIFTING: For small screen-->
                               <h1>Log In</h1>
-                              <form name="big-modal">
-                              <a><img style="text-align:center;" src="img/upmail.png"/></a>
-                              <input type="text" value="" placeholder="Username" id="thisusername" name="big-modal-input" autofocus="autofocus" required/>
-                              <input type="password" value="" placeholder="Password" id="password" required/>
-                              <a class="loginbtn button">Log In</a>
-                              <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
+                              <form name="small-modal">
+                                <a><img style="margin-left:auto;margin-right:auto;" src="img/upmail.png"/></a>
+                                <input type="text" value="" placeholder="Username" id="username" autofocus required/>
+                                <input type="password" value="" placeholder="Password" id="password" required/>
+                                <a class="loginbtn button">Log In</a>
+                                <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
                               </form>
-                            </li>
-                            <li>
-                              <h1>Reminders</h1>
-                              <ul class="disc">
-                                <li><strong>Keep your password to yourself.</strong> Sharing this to anyone is a violation of the <a>Acceptable Use Policy of the UP System</a>.  Violators shall suffer suspension ranging from one week to one year.</li>
-                                <li><strong>Account Problems:</strong> Proceed to the offices listed below and bring validated UPLB ID or any other valid ID plus Form 5.
-                                  <ul>
-                                    <li><strong>OSAM: </strong> Communication and Information Technology, Room 7, 2/F Student Union Building.</li>
-                                    <li><strong>e-UP/UP Mail: </strong>Information Technology Center, 2/F AG Samonte Hall.</li>
-                                  </ul>
+                            </div>
+                            <div class="login-block largeLogIn hide-for-small-only">
+                            <!--SHIFTING: For big screen-->
+                            <ul class="small-block-grid-2">
+                                <li>
+                                  <h1>Log In</h1>
+                                  <a><img style="margin-left:auto;margin-right:auto;" src="img/upmail.png"/></a>
+                                  <input type="text" value="" placeholder="Username" id="thisusername" name="big-modal-input" autofocus="autofocus" required/>
+                                  <input type="password" value="" placeholder="Password" id="password" required/>
+                                  <a class="loginbtn button">Log In</a>
+                                  <h5>No account? <br class="show-for-small-only"><a href="#">Create an account</a>.</h5>
                                 </li>
-                               </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>  
+                                <li>
+                                  <h1>Reminders</h1>
+                                  <ul class="disc">
+                                    <li><strong>Keep your password to yourself.</strong> Sharing this to anyone is a violation of the <a>Acceptable Use Policy of the UP System</a>.  Violators shall suffer suspension ranging from one week to one year.</li>
+                                    <li><strong>Account Problems:</strong> Proceed to the offices listed below and bring validated UPLB ID or any other valid ID plus Form 5.
+                                      <ul>
+                                        <li><strong>OSAM: </strong> Communication and Information Technology, Room 7, 2/F Student Union Building.</li>
+                                        <li><strong>e-UP/UP Mail: </strong>Information Technology Center, 2/F AG Samonte Hall.</li>
+                                      </ul>
+                                    </li>
+                                   </ul>
+                                </li>
+                              </ul>
+                            </div>
+                      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
                   </li>
                 </ul>
                 <ul class="right hide-when-not-fit">
@@ -194,9 +195,9 @@
     <!--END OF HEADER-->
 
     <br><br><br><br><br><br class="hide-on-extremely-small"><br class="hide-on-extremely-small">
-    
+
     <!--CONTENTS-->
-    <div class="medium-12 columns">
+    <div style="width:97%;margin:auto;">
       <!--ORBIT SAMPLE-->
 
       <br class="show-for-small-only">
@@ -487,11 +488,17 @@
                 <i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;536-2238</br>
                 <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;&nbsp;HELP [space] INQUIRIES to 2929200</br>
               </small><br>
-              <ul class="inline-list">
-                <li style="margin: auto;" class="sns-icons"><a href="#"><img src="img/facebook.png" style="width:30px;"/></a></li>
-                <li style="margin: auto;" class="sns-icons"><a href="#"><img src="img/twitter.png" style="width:30px;"/></a></li>
-                <li style="margin: auto;" class="sns-icons"><a href="#"><img src="img/youtube.png" style="width:30px;"/></a></li>
-                <li style="margin: auto;" class="sns-icons"><a href="#"><img src="img/gplus.png" style="width:30px;"/></a></li>
+              <ul style="float:left;" class="inline-list hide-for-small-only">
+                <li style="margin:0;" class="sns-icons"><a href="#"><img src="img/facebook.png" style="width:30px;"/></a></li>
+                <li style="margin:0;" class="sns-icons"><a href="#"><img src="img/twitter.png" style="width:30px;"/></a></li>
+                <li style="margin:0;" class="sns-icons"><a href="#"><img src="img/youtube.png" style="width:30px;"/></a></li>
+                <li style="margin:0;" class="sns-icons"><a href="#"><img src="img/gplus.png" style="width:30px;"/></a></li>
+              </ul>
+              <ul style="text-align:center;" class="show-for-small-only">
+                <li style="display:inline;" class="sns-icons"><a href="#"><img src="img/facebook.png" style="width:30px;"/></a></li>
+                <li style="display:inline;" class="sns-icons"><a href="#"><img src="img/twitter.png" style="width:30px;"/></a></li>
+                <li style="display:inline;" class="sns-icons"><a href="#"><img src="img/youtube.png" style="width:30px;"/></a></li>
+                <li style="display:inline;" class="sns-icons"><a href="#"><img src="img/gplus.png" style="width:30px;"/></a></li>
               </ul>
           </h4>
         </div>
@@ -518,11 +525,10 @@
 
           $("#toggle").click(function(){
             setTimeout(function(){
+              $('#myModal').css( "top", "100px" );
               $('#thisusername').focus();
-            },500);
-            setTimeout(function(){
               $('#username').focus();
-            },500);
+            },500);              
           });
           $('.single-item').slick({
             infinite: true,

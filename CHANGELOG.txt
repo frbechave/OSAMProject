@@ -60,3 +60,13 @@ October 16, 2015
 * fixed: on small screen, put the logo at the center
 * fixed: on some screen, make logo vertical
 * made all links color maroon like in the present site
+
+October 21, 2015
+* modal now fixed at the center when revealed ***
+* centered social networking sites on small screen's footer
+* x-aria on big modals
+* red link hover @ #500000
+* fixed the unknown shadow on small screen's dropdown menu
+* edited student.html for student's page
+* added student log out
+* added student name on small screen's dropdown menu
