@@ -211,9 +211,10 @@ a:hover{
         bottom:20px; 
         z-index:2; 
         margin:0; 
-        padding:0; 
+        padding-left:0.5%;
+        padding-right: 0.5%;
         font-size: 3.0vw;
-        background:rgba(32, 34, 38, .4); 
+        background:rgba(32, 34, 38, .8); 
         line-height:2.1em;  
         color:#ffffff; 
         margin: auto; 

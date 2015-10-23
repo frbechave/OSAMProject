@@ -70,3 +70,7 @@ October 21, 2015
 * edited student.html for student's page
 * added student log out
 * added student name on small screen's dropdown menu
+
+October 23, 2015
+* Put padding at the carousel caption
+* Changed the opacity of the carousel caption from 0.4 to 0.8
